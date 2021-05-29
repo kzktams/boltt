@@ -1,0 +1,198 @@
+body{
+    background-color: rgb(255, 255, 255);
+    font-family: 'Courier New', Courier, monospace;
+}
+.my-row{
+    width: auto;
+    margin-top: 30px;
+    margin-bottom: 70px;
+}
+
+.my-column{
+    margin: 30px;
+}
+.my-footer{
+    background-color: black;
+    color: gray;
+}
+.my-title1{
+    font-style: italic;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 18px;
+
+    text-align: center;
+}
+.card:hover{
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+}
+
+.myimage{
+    height: 540px;
+}
+
+.icon{
+    width: 16px;
+    height: 16px;
+    fill: currentColor;
+    color: rgb(230, 28, 26);
+}
+
+
+.carousel-item {
+	height: 100vh;
+	min-height: 300px;
+}
+.carousel-caption {
+	bottom: 220px;
+}
+.carousel-caption h5 {
+	font-size: 45px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	margin-top: 25px;
+	font-family: merienda;
+}
+.carousel-caption p {
+	width: 60%;
+	margin: auto;
+	font-size: 18px;
+	line-height: 1.9;
+	font-family: poppins;
+}
+.carousel-caption a {
+	text-transform: uppercase;
+	background: #262626;
+	padding: 10px 30px;
+	display: inline-block;
+	color: rgb(230, 28, 26);
+	margin-top: 15px;
+}
+.navbar-nav a {
+	font-family: poppins;
+	font-size: 18px;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+.navbar-light .navbar-brand {
+	color: rgb(230, 28, 26);
+	font-size: 25px;
+	text-transform: uppercase;
+	font-weight: bold;
+	letter-spacing: 2px;
+}
+.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
+	color: rgb(230, 28, 26);
+}
+.navbar-light .navbar-nav .nav-link {
+	color: rgb(230, 28, 26);
+}
+.navbar-nav {
+	text-align: center;
+}
+.nav-link {
+	padding: .2rem 1rem;
+}
+.nav-link.active, .nav-link:focus {
+	color: rgb(230, 28, 26);
+}
+.navbar-toggler {
+	padding: 1px 5px;
+	font-size: 18px;
+	line-height: 0.3;
+	background: rgb(230, 28, 26);
+}
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+	color: rgb(230, 28, 26);
+}
+.w-100 {
+	height: 100vh;
+}
+@media only screen and (max-width: 767px) {
+	.navbar-nav.ml-auto {
+		background: rgba(0, 0, 0, 0.5);
+	}
+	.navbar-nav a {
+		font-size: 14px;
+		font-weight: normal;
+	}
+}
+
+.navbar{
+	background-color: rgb(242, 222, 163);
+}
+
+footer{
+	width: 100%;
+	background-color: rgb(128,0,0);
+	padding: 1% 1% 5% 1%;
+	color: rgb(242, 222, 163);
+}
+.fa{
+	padding: 15px;
+	font-size: 20px;
+	color: rgb(242, 222, 163);
+}
+
+.fa:hover{
+	color: rgb(81, 196, 193);
+	text-decoration: none;
+}
+
+.xyz {
+	background-size: auto;
+	text-align: center;
+	padding-top: 100px;
+}
+.btn-circle.btn-sm {
+	width: 30px;
+	height: 30px;
+	padding: 6px 0px;
+	border-radius: 15px;
+	font-size: 8px;
+	text-align: center;
+}
+.btn-circle.btn-md {
+	width: 50px;
+	height: 50px;
+	padding: 7px 10px;
+	border-radius: 25px;
+	font-size: 10px;
+	text-align: center;
+}
+.btn-circle.btn-xl {
+	width: 70px;
+	height: 70px;
+	padding: 10px 16px;
+	border-radius: 35px;
+	font-size: 12px;
+	text-align: center;
+}
+
+.szamPlusz{
+	width: 50px;
+	text-align: center;
+}
+
+#pluszMinusz{
+	margin: 0 auto;
+	padding-bottom: 10px;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
+
+.formnak{
+	background-color: white;
+}
+.link1{
+	color: rgb(242, 222, 163);
+}
+.link1:hover{
+	color: rgb(81, 196, 193);
+	text-decoration: none;
+}
+.link1:active{
+	color: rgb(54, 126, 123);
+	text-decoration: none;
+}
