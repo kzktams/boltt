@@ -364,3 +364,8 @@ footer{
 	text-transform: uppercase;
 	padding-bottom: 50px;
 }
+
+.copyright{
+	padding-top: 30px;
+	font-size: 10px;
+}
