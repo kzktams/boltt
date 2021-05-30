@@ -218,6 +218,7 @@ footer{
 	width: 150px;
 	background-color: rgb(128,0,0);
 	border: none;
+	color: rgb(242, 222, 163);
 }
 
 .headerGomb1:hover{
@@ -235,6 +236,7 @@ footer{
 	width: 150px;
 	background-color: rgb(78, 1, 1);
 	border: none;
+	color: rgb(242, 222, 163);
 }
 .headerGomb2:hover{
 	background-color: rgb(242, 222, 163);
