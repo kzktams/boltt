@@ -211,5 +211,36 @@ footer{
 }
 
 .cimalahuzas{
-	width: 60px;
+	width: 70px;
+}
+
+.headerGomb1{
+	width: 150px;
+	background-color: rgb(128,0,0);
+	border: none;
+}
+
+.headerGomb1:hover{
+	background-color: rgb(242, 222, 163);
+	color: rgb(128,0,0);
+	
+}
+.headerGomb1:active{
+	background-color: rgb(242, 222, 163);
+	color: rgb(128,0,0);
+	
+}
+
+.headerGomb2{
+	width: 150px;
+	background-color: rgb(78, 1, 1);
+	border: none;
+}
+.headerGomb2:hover{
+	background-color: rgb(242, 222, 163);
+	color: rgb(78, 1, 1);
+}
+.headerGomb2:active{
+	background-color: rgb(242, 222, 163);
+	color: rgb(78, 1, 1);
 }
