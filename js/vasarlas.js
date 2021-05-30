@@ -4,20 +4,26 @@ function $(id) {
     return document.getElementById(id);
 }
 
-function init() {
-    $("plusz").addEventListener("click", kosarbaTesz, false);
-}
-
-let kosarbaTesz = function(){
-    let plusz = $("szam").value;
-    let minusz = $("minusz").value;
+/*
+function minusz(){
     let szam = $("szam").value;
-    if(plusz){
-        szam++;
-    }
-    if(minusz){
+    if($('minusz').clicked == true){
         szam--;
     }
 
-
 }
+
+function plusz(){
+    if($("plusz").clicked == true){
+        szam++;
+    }
+
+}*/
+
+function increment() {
+    $('szam').stepUp();
+ }
+
+ function decrement() {
+    $('szam').stepDown();
+ }
