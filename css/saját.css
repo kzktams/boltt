@@ -1,6 +1,6 @@
 body{
     background-color: rgb(255, 255, 255);
-    font-family: 'Courier New', Courier, monospace;
+    font-family: Arial, Helvetica, sans-serif;
 }
 .my-row{
     width: auto;
@@ -125,7 +125,7 @@ body{
 footer{
 	width: 100%;
 	background-color: rgb(128,0,0);
-	padding: 1% 1% 5% 1%;
+	padding: 1%;
 	color: rgb(242, 222, 163);
 }
 .fa{
@@ -195,4 +195,21 @@ footer{
 .link1:active{
 	color: rgb(54, 126, 123);
 	text-decoration: none;
+}
+
+.alahuzas{
+	color: rgb(78, 1, 1);
+	border: 1px solid rgb(78, 1, 1);
+}
+
+.cimFooter{
+	padding-bottom: 5px;
+}
+
+.footerMedia{
+	padding-bottom: 10px;
+}
+
+.cimalahuzas{
+	width: 60px;
 }
