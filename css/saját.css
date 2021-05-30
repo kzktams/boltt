@@ -244,3 +244,40 @@ footer{
 	background-color: rgb(242, 222, 163);
 	color: rgb(78, 1, 1);
 }
+
+.ertesitesKep{
+	max-width: 500px;
+	max-height: 500px;
+}
+
+.figyelemfelkeltContainer{
+	padding-top: 50px ;
+	padding-bottom: 50px ;
+}
+
+.figyelemfelkelt{
+	background-color: rgb(128,0,0);
+	color: white;
+}
+
+.figyelemfelkeltEmail{
+	border: rgb(128,0,0) 1px  solid ;
+	width: 60%;
+	border-radius: 5px;
+}
+.figyelemfelkeltGomb{
+	background-color: rgb(242, 222, 163);
+	border: none;
+	color: rgb(128,0,0);
+	padding: 10px 25px;
+	text-align: center;
+	text-decoration: initial;
+	display: inline-block;
+	font-size: 16px;
+	margin: 4px 2px;
+	cursor: pointer;
+	
+}
+.figyelemfelkeltCim{
+	padding-top: 40px;
+}
