@@ -1,3 +1,4 @@
+
 window.addEventListener("load", init, false);
 
 function $(id){
@@ -5,11 +6,16 @@ function $(id){
 }
 
 function init(){
-    $("regisztracio").addEventListener("click", email, false);
+    $("feliratkozas").addEventListener("click", email, false);
 }
-
+/*
 let email = function() {
     onclick="document.getElementById('email').value = ''"
+}
+*/
+
+let email = function () {
+    document.getElementById('email').value = '';
 }
 
 //forrás: https://codepen.io/baselakasha/pen/RZybYe
