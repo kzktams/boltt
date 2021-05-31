@@ -1,3 +1,17 @@
+window.addEventListener("load", init, false);
+
+function $(id){
+    return document.getElementById(id);
+}
+
+function init(){
+    $("regisztracio").addEventListener("click", email, false);
+}
+
+let email = function() {
+    document.getElementById("email").value = "";
+}
+
 //forrás: https://codepen.io/baselakasha/pen/RZybYe
 window.onload=function(){
     var minusBtn = document.getElementById("minus"),
@@ -43,8 +57,6 @@ window.onload=function(){
     
 }
 
-let kosar = [];
+//let kosar = [];
 
-function vasarlas(){
-    
-}
+
