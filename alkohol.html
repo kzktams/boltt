@@ -39,7 +39,7 @@
                     <li class="nav-item ">
 
                         <div class="dropdown">
-                            <button class="dropdown-toggle legordulo nav-link nav-item collapse navbar-collapse navbar-nav ml-auto " aria-haspopup="true" aria-expanded="false" type="button" data-toggle="dropdown">Kategóriák
+                            <button class="btn dropdown-toggle legordulo nav-link nav-item collapse navbar-collapse navbar-nav ml-auto " aria-haspopup="true" aria-expanded="false" type="button" data-toggle="dropdown">Kategóriák
                                 <span class="caret"></span>
                             </button>
                             <ul class="dropdown-menu">
@@ -64,6 +64,7 @@
         </div>
     </nav>
 
+    
     <!-- TITLE -->
     <h1 class="text-center">Alkoholok</h1>
     <!-- GRID SYSTEM -->
@@ -73,15 +74,16 @@
             <div class="col-lg-3 col-md-5 col-sm-7 col-7 p-2">
                 <!-- CARD -->
                 <div class="card h-100 text-center">
-                    <img src="images/képek/alkohol/asahi.jpg" class="card-img-top " alt="amerikai pszicho">
+                    <img src="images/képek/alkohol/asahi.jpg" class="card-img-top " alt="asahi">
                     <div class="card-body">
                         <p class="card-text my-title1">ASAHI</p>
                         <span id="ar">289</span>
                         <span> Ft</span>
-                        <div id="pluszMinusz">
-                            <button type="button" class="btn btn-light btn-circle btn-sm" id="minus">-</button>
-                            <span id="szam">0</span>
-                            <button type="button" class="btn btn-light btn-circle btn-sm" id="plus">+</button>
+                        <div id="pluszMinusz" class="number">
+                            <button type="button" class="btn minus-btn disabled btn-light btn-circle btn-sm minus" id="minus">-</button>
+                            <!--<span id="szam">0</span>-->
+                            <input type="text" id="quantity" value="1">
+                            <button type="button" class=" btn plus-btn btn-light btn-circle btn-sm plus" id="plus">+</button>
                         </div>
                         <div id="kosarbaTesz">
                             <button type="button" class="btn btn-outline-danger ">
@@ -96,15 +98,16 @@
             <div class="col-lg-3 col-md-5 col-sm-7 col-7 p-2">
                 <!-- CARD -->
                 <div class="card h-100 text-center">
-                    <img src="images/képek/alkohol/heineken.jpeg" class="card-img-top " alt="nyomd bébi nyomd">
+                    <img src="images/képek/alkohol/heineken.jpeg" class="card-img-top " alt="heineken">
                     <div class="card-body">
                         <p class="card-text my-title1">HEINEKEN</p>
                         <span id="ar">269</span>
                         <span> Ft</span>
-                        <div id="pluszMinusz">
-                            <button type="button" class="btn btn-light btn-circle btn-sm gombMeret">-</button>
-                            <input type="text" value="1" class="szamPlusz">
-                            <button type="button" class="btn btn-light btn-circle btn-sm ">+</button>
+                        <div id="pluszMinusz" class="number">
+                            <button type="button" class="btn minus-btn disabled btn-light btn-circle btn-sm minus" id="minus">-</button>
+                            <!--<span id="szam">0</span>-->
+                            <input type="text" id="quantity" value="1">
+                            <button type="button" class=" btn plus-btn btn-light btn-circle btn-sm plus" id="plus">+</button>
                         </div>
                         <div id="kosarbaTesz">
                             <button type="button" class="btn btn-outline-danger ">
@@ -124,10 +127,11 @@
                         <p class="card-text my-title1">JACK DANIEL'S</p>
                         <span id="ar">6290</span>
                         <span> Ft</span>
-                        <div id="pluszMinusz">
-                            <button type="button" class="btn btn-light btn-circle btn-sm gombMeret">-</button>
-                            <input type="text" value="1" class="szamPlusz">
-                            <button type="button" class="btn btn-light btn-circle btn-sm ">+</button>
+                        <div id="pluszMinusz" class="number">
+                            <button type="button" class="btn minus-btn disabled btn-light btn-circle btn-sm minus" id="minus">-</button>
+                            <!--<span id="szam">0</span>-->
+                            <input type="text" id="quantity" value="1">
+                            <button type="button" class=" btn plus-btn btn-light btn-circle btn-sm plus" id="plus">+</button>
                         </div>
                         <div id="kosarbaTesz">
                             <button type="button" class="btn btn-outline-danger ">
@@ -148,9 +152,9 @@
                         <span id="ar">5299</span>
                         <span> Ft</span>
                         <div id="pluszMinusz">
-                            <button type="button" class="btn btn-light btn-circle btn-sm gombMeret">-</button>
-                            <input type="text" value="1" class="szamPlusz">
-                            <button type="button" class="btn btn-light btn-circle btn-sm ">+</button>
+                            <button type="button" class="btn btn-light btn-circle btn-sm" id="minus">-</button>
+                            <span id="szam">0</span>
+                            <button type="button" class="btn btn-light btn-circle btn-sm" id="plus">+</button>
                         </div>
                         <div id="kosarbaTesz">
                             <button type="button" class="btn btn-outline-danger ">
@@ -171,9 +175,9 @@
                         <span id="ar">5325</span>
                         <span> Ft</span>
                         <div id="pluszMinusz">
-                            <button type="button" class="btn btn-light btn-circle btn-sm gombMeret">-</button>
-                            <input type="text" value="1" class="szamPlusz">
-                            <button type="button" class="btn btn-light btn-circle btn-sm ">+</button>
+                            <button type="button" class="btn btn-light btn-circle btn-sm" id="minus">-</button>
+                            <span id="szam">0</span>
+                            <button type="button" class="btn btn-light btn-circle btn-sm" id="plus">+</button>
                         </div>
                         <div id="kosarbaTesz">
                             <button type="button" class="btn btn-outline-danger ">
@@ -281,6 +285,7 @@
 
         </div>
     </div>
+
     <!-- FOOTER -->
     <footer class="container-fluid text-center">
         <div class="row footerMedia">
