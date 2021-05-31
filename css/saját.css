@@ -370,3 +370,16 @@ footer{
 	font-size: 10px;
 }
 
+.legordulo{
+	font-family: poppins;
+	font-size: 18px;
+	text-transform: uppercase;
+	font-weight: bold;
+	border: none;
+	background-color: rgb(242, 222, 163);
+	padding: 0px;
+}
+
+.dropdown-toggle::after {
+content: none;
+}

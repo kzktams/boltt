@@ -27,17 +27,31 @@
     <!--forrás részlet: https://www.divinectorweb.com/2020/11/bootstrap-4-navbar-with-slider.html-->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top">
         <div class="container">
-            <a class="navbar-brand" href="#">Creativo</a> <button aria-controls="navbarSupportedContent"
+            <a class="navbar-brand" href="#">online abc</a> <button aria-controls="navbarSupportedContent"
                 aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler"
                 data-target="#navbarSupportedContent" data-toggle="collapse" type="button"><span
                     class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item active">
-                        <a class="nav-link" href="#">Kezdőlap</a>
+                        <a class="nav-link" href="index.html">Kezdőlap</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Kategóriák</a>
+                    <li class="nav-item ">
+
+                        <div class="dropdown">
+                            <button class="dropdown-toggle legordulo nav-link nav-item collapse navbar-collapse navbar-nav ml-auto " aria-haspopup="true" aria-expanded="false" type="button" data-toggle="dropdown">Kategóriák
+                                <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu">
+                              <li><a href="elelmiszer.html">Élelmiszer</a></li>
+                              <li><a href="haztartas.html">Háztartás</a></li>
+                              <li><a href="husok.html">Hús</a></li>
+                              <li><a href="uditok.html">Üdítő</a></li>
+                              <li><a href="alkohol.html">Alkohol</a></li>
+                              <li><a href="jatekok.html">Játékok</a></li>
+                            </ul>
+                          </div>
+                          
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Összes termék</a>
@@ -66,9 +80,9 @@
                         <span id="ar">289</span>
                         <span> Ft</span>
                         <div id="pluszMinusz">
-                            <button type="button" class="btn btn-light btn-circle btn-sm gombMeret">-</button>
-                            <input type="text" value="1" class="szamPlusz">
-                            <button type="button" class="btn btn-light btn-circle btn-sm ">+</button>
+                            <button type="button" class="btn btn-light btn-circle btn-sm" id="minus">-</button>
+                            <span id="szam">0</span>
+                            <button type="button" class="btn btn-light btn-circle btn-sm" id="plus">+</button>
                         </div>
                         <div id="kosarbaTesz">
                             <button type="button" class="btn btn-outline-danger ">
@@ -323,5 +337,7 @@
         </div>
     </footer>
 </body>
+
+<script src="js/vasarlas.js"></script>
 
 </html>
