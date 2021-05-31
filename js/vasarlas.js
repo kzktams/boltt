@@ -9,7 +9,7 @@ function init(){
 }
 
 let email = function() {
-    document.getElementById("email").value = "";
+    onclick="document.getElementById('email').value = ''"
 }
 
 //forrás: https://codepen.io/baselakasha/pen/RZybYe
