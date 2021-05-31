@@ -16,6 +16,7 @@ let email = function() {
 let email = function () {
     document.getElementById('email').value = '';
 }
+
 /*
 //forrás: https://codepen.io/baselakasha/pen/RZybYe
 window.onload=function(){
@@ -63,6 +64,7 @@ window.onload=function(){
 }
 */
 
+/*
 
 // forrás: https://www.youtube.com/watch?v=GXsWa_6vnOo&t=306s
 //setting default attribute to disabled of minus button
@@ -103,5 +105,6 @@ document.querySelector(".minus-btn").addEventListener("click", function () {
     }
 
 })
+*/
 
 
