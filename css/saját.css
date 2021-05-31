@@ -383,3 +383,57 @@ footer{
 .dropdown-toggle::after {
 content: none;
 }
+
+.motto{
+	font-style: italic;
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif, 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	font-size: 35px;
+	color: rgb(128,0,0);
+}
+
+.hirekCol{
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+
+.hirekCard:hover{
+	transform: none;
+}
+
+.hirekKepek {
+	height: 232px;
+    object-fit: cover;
+}
+
+.tovabbiCikkekGomb{
+	width: 150px;
+	background-color: rgb(128,0,0);
+	border: none;
+	border-radius:20px;
+	color: rgb(242, 222, 163);
+}
+
+.tovabbiCikkekGomb:hover{
+	background-color: rgb(242, 222, 163);
+	color: rgb(128,0,0);
+	
+}
+
+.tovabbiCikkekGomb2{
+	width: 150px;
+	background-color: rgb(128,0,0);
+	border: none;
+	border-radius:20px;
+	color: rgb(242, 222, 163);
+	opacity: 80%;
+}
+
+.tovabbiCikkekGomb2:hover{
+	background-color: rgb(242, 222, 163);
+	color: rgb(128,0,0);
+}
+
+.hirekContainer{
+	padding-top: 60px;
+	padding-bottom: 60px;
+}
