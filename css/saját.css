@@ -396,6 +396,10 @@ content: none;
 	padding-bottom: 30px;
 }
 
+.hirekCard{
+	min-height: 460px;
+}
+
 .hirekCard:hover{
 	transform: none;
 }
@@ -466,4 +470,14 @@ content: none;
 
 .termekKepek{
 	height: 267px;
+}
+
+.cikkCim{
+	font-family: 'Playfair Display', serif;
+    font-weight: 900;
+    font-size: 80px;
+    text-transform: uppercase;
+    display: inline-block;
+	text-align: center;
+	color: rgb(128,0,0);
 }
