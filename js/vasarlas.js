@@ -40,6 +40,7 @@ $('.sub').click(function() {
 });
 
 /*
+
 //korsárba tesz + összeg
 let osszeg = 0;
 let termekek = [];
