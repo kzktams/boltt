@@ -437,3 +437,29 @@ content: none;
 	padding-top: 60px;
 	padding-bottom: 60px;
 }
+
+.pluszMinusz{
+	background-color: rgb(128,0,0);
+	color: rgb(242, 222, 163);
+	border: none;
+  	padding: 3px 3px;
+  	text-align: center;
+	font-size: 19px;
+	border-radius: 150px;
+	width: 34px;
+}
+
+.pluszMinusz:hover{
+	background-color: rgb(242, 222, 163);
+	color: rgb(128,0,0);
+}
+
+.mennyiseg{
+	width: 60px;
+	text-align: center;
+	border: gray
+}
+
+.pluszMinuszRes{
+	padding-bottom: 15px;
+}
