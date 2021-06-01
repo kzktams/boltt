@@ -39,10 +39,18 @@ $('.sub').click(function() {
   }
 });
 
+/*
 //korsárba tesz + összeg
 let osszeg = 0;
-let kosar = [];
+let termekek = [];
+let mennyisegek = [];
 function kosarbaTesz() {
-    let termek = document.getElementById("");
+    let termek = document.getElementById('.field');
+    let mennyiseg = document.getElementById('.field').value;
+    if(document.getElementById("kosarbaTesz").onclick){
+        kosar.push(termek);
+    }
     
+
 }
+*/
