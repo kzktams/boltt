@@ -1,3 +1,4 @@
+
 window.addEventListener("load", init, false);
 
 function $(id) {
@@ -5,7 +6,7 @@ function $(id) {
 }
 
 function init() {
-    $("feliratkozas").addEventListener("click", email, false);
+    $("szam").addEventListener("click", vasarol, false);
 }
 /*
 let email = function() {
@@ -17,7 +18,7 @@ let email = function () {
     document.getElementById('email').value = '';
 }
 
-/*
+
 //forrás: https://codepen.io/baselakasha/pen/RZybYe
 window.onload=function(){
     var minusBtn = document.getElementById("minus"),
@@ -62,7 +63,47 @@ window.onload=function(){
     }
     
 }
-*/
+
+let vasarol = function (){
+    var minusBtn2 = document.getElementById("minus2"),
+        plusBtn2 = document.getElementById("plus2"),
+        numberPlace2 = document.getElementById("szam2"),
+        number2 = 0, /// number value
+        min2 = 0, /// min number
+        max2 = 30; /// max number
+        
+    minusBtn2.onclick = function(){
+        if (number2>min2){
+           number2--; /// Minus 1 of the number
+           numberPlace2.innerText = number2 ; /// Display the value in place of the number
+           
+        }
+        if(number2 == min2) {        
+            numberPlace2.style.color= "red";
+            setTimeout(function(){numberPlace2.style.color= "black"},500)
+        }
+        else {
+          numberPlace2.style.color="black";            
+           }
+                
+    }
+    plusBtn2.onclick = function(){
+        if(number2<max2){
+           number2++;
+           numberPlace2.innerText = number2 ; /// Display the value in place of the number
+        }     
+        if(number2 == max2){
+               numberPlace2.style.color= "red";
+               setTimeout(function(){numberPlace2.style.color= "black"},500)
+        }
+        else {
+               numberPlace2.style.color= "black";
+               
+        }
+    }
+
+    
+}
 
 /*
 
@@ -106,5 +147,4 @@ document.querySelector(".minus-btn").addEventListener("click", function () {
 
 })
 */
-
 
