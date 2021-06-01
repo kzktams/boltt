@@ -18,6 +18,8 @@
     <!-- forrás: https://www.w3schools.com/bootstrap4/bootstrap_icons.asp -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
     <link rel="shortcut icon" type="image/x-icon" href="images/képek/disz/shopping_bag.png">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <title>haztartas</title>
 </head>
 
@@ -63,10 +65,10 @@
                         <p class="card-text my-title1">ALUFÓLIA</p>
                         <span id="ar">549</span>
                         <span> Ft</span>
-                        <div id="pluszMinusz">
-                            <button type="button" class="btn btn-light btn-circle btn-sm gombMeret">-</button>
-                            <input type="text" value="1" class="szamPlusz">
-                            <button type="button" class="btn btn-light btn-circle btn-sm ">+</button>
+                        <div id="field1">
+                            <button type="button" class=sub id="sub">-</button>
+                            <input type="text" id="1" value=0 class=field>
+                            <button type="button" id="add" class=add>+</button>
                         </div>
                         <div id="kosarbaTesz">
                             <button type="button" class="btn btn-outline-danger ">
@@ -86,10 +88,10 @@
                         <p class="card-text my-title1">FAKANÁL</p>
                         <span id="ar">305</span>
                         <span> Ft</span>
-                        <div id="pluszMinusz">
-                            <button type="button" class="btn btn-light btn-circle btn-sm gombMeret">-</button>
-                            <input type="text" value="1" class="szamPlusz">
-                            <button type="button" class="btn btn-light btn-circle btn-sm ">+</button>
+                        <div id="field2">
+                            <button type="button" id="sub2" class=sub>-</button>
+                            <input type="text" id="2" value=0 class=field>
+                            <button type="button" id="add2" class=add>+</button>
                         </div>
                         <div id="kosarbaTesz">
                             <button type="button" class="btn btn-outline-danger ">
@@ -109,10 +111,10 @@
                         <p class="card-text my-title1">KANÁL</p>
                         <span id="ar">415</span>
                         <span> Ft</span>
-                        <div id="pluszMinusz">
-                            <button type="button" class="btn btn-light btn-circle btn-sm gombMeret">-</button>
-                            <input type="text" value="1" class="szamPlusz">
-                            <button type="button" class="btn btn-light btn-circle btn-sm ">+</button>
+                        <div id="field3">
+                            <button type="button" id="sub3" class=sub>-</button>
+                            <input type="text" id="3" value=0 class=field>
+                            <button type="button" id="add3" class=add>+</button>
                         </div>
                         <div id="kosarbaTesz">
                             <button type="button" class="btn btn-outline-danger ">
@@ -132,10 +134,10 @@
                         <p class="card-text my-title1">KÉS</p>
                         <span id="ar">389</span>
                         <span> Ft</span>
-                        <div id="pluszMinusz">
-                            <button type="button" class="btn btn-light btn-circle btn-sm gombMeret">-</button>
-                            <input type="text" value="1" class="szamPlusz">
-                            <button type="button" class="btn btn-light btn-circle btn-sm ">+</button>
+                        <div id="field4">
+                            <button type="button" id="sub4" class=sub>-</button>
+                            <input type="text" id="4" value=0 class=field>
+                            <button type="button" id="add4" class=add>+</button>
                         </div>
                         <div id="kosarbaTesz">
                             <button type="button" class="btn btn-outline-danger ">
@@ -155,10 +157,10 @@
                         <p class="card-text my-title1">VILLA</p>
                         <span id="ar">405</span>
                         <span> Ft</span>
-                        <div id="pluszMinusz">
-                            <button type="button" class="btn btn-light btn-circle btn-sm gombMeret">-</button>
-                            <input type="text" value="1" class="szamPlusz">
-                            <button type="button" class="btn btn-light btn-circle btn-sm ">+</button>
+                        <div id="field5">
+                            <button type="button" id="sub5" class=sub>-</button>
+                            <input type="text" id="5" value=0 class=field>
+                            <button type="button" id="add5" class=add>+</button>
                         </div>
                         <div id="kosarbaTesz">
                             <button type="button" class="btn btn-outline-danger ">
@@ -178,10 +180,10 @@
                         <p class="card-text my-title1">KUKÁSZSÁK</p>
                         <span id="ar">399</span>
                         <span> Ft</span>
-                        <div id="pluszMinusz">
-                            <button type="button" class="btn btn-light btn-circle btn-sm gombMeret">-</button>
-                            <input type="text" value="1" class="szamPlusz">
-                            <button type="button" class="btn btn-light btn-circle btn-sm ">+</button>
+                        <div id="field6">
+                            <button type="button" id="sub6" class=sub>-</button>
+                            <input type="text" id="6" value=0 class=field>
+                            <button type="button" id="add6" class=add>+</button>
                         </div>
                         <div id="kosarbaTesz">
                             <button type="button" class="btn btn-outline-danger ">
@@ -201,10 +203,10 @@
                         <p class="card-text my-title1">LÁBAS</p>
                         <span id="ar">5799</span>
                         <span> Ft</span>
-                        <div id="pluszMinusz">
-                            <button type="button" class="btn btn-light btn-circle btn-sm gombMeret">-</button>
-                            <input type="text" value="1" class="szamPlusz">
-                            <button type="button" class="btn btn-light btn-circle btn-sm ">+</button>
+                        <div id="field7">
+                            <button type="button" id="sub7" class=sub>-</button>
+                            <input type="text" id="7" value=0 class=field>
+                            <button type="button" id="add7" class=add>+</button>
                         </div>
                         <div id="kosarbaTesz">
                             <button type="button" class="btn btn-outline-danger ">
@@ -224,10 +226,10 @@
                         <p class="card-text my-title1">SERPENYŐ</p>
                         <span id="ar">6455</span>
                         <span> Ft</span>
-                        <div id="pluszMinusz">
-                            <button type="button" class="btn btn-light btn-circle btn-sm gombMeret">-</button>
-                            <input type="text" value="1" class="szamPlusz">
-                            <button type="button" class="btn btn-light btn-circle btn-sm ">+</button>
+                        <div id="field8">
+                            <button type="button" id="sub8" class=sub>-</button>
+                            <input type="text" id="8" value=0 class=field>
+                            <button type="button" id="add8" class=add>+</button>
                         </div>
                         <div id="kosarbaTesz">
                             <button type="button" class="btn btn-outline-danger ">
@@ -247,10 +249,10 @@
                         <p class="card-text my-title1">SÜTŐPAPÍR</p>
                         <span id="ar">225</span>
                         <span> Ft</span>
-                        <div id="pluszMinusz">
-                            <button type="button" class="btn btn-light btn-circle btn-sm gombMeret">-</button>
-                            <input type="text" value="1" class="szamPlusz">
-                            <button type="button" class="btn btn-light btn-circle btn-sm ">+</button>
+                        <div id="field9">
+                            <button type="button" id="sub9" class=sub>-</button>
+                            <input type="text" id="9" value=0 class=field>
+                            <button type="button" id="add9" class=add>+</button>
                         </div>
                         <div id="kosarbaTesz">
                             <button type="button" class="btn btn-outline-danger ">
@@ -271,10 +273,10 @@
                         <p class="card-text my-title1">SZALVÉTA</p>
                         <span id="ar">319</span>
                         <span> Ft</span>
-                        <div id="pluszMinusz">
-                            <button type="button" class="btn btn-light btn-circle btn-sm gombMeret">-</button>
-                            <input type="text" value="1" class="szamPlusz">
-                            <button type="button" class="btn btn-light btn-circle btn-sm ">+</button>
+                        <div id="field10">
+                            <button type="button" id="sub10" class=sub>-</button>
+                            <input type="text" id="10" value=0 class=field>
+                            <button type="button" id="add10" class=add>+</button>
                         </div>
                         <div id="kosarbaTesz">
                             <button type="button" class="btn btn-outline-danger ">
@@ -294,10 +296,10 @@
                         <p class="card-text my-title1">SZŰRŐ</p>
                         <span id="ar">1689</span>
                         <span> Ft</span>
-                        <div id="pluszMinusz">
-                            <button type="button" class="btn btn-light btn-circle btn-sm gombMeret">-</button>
-                            <input type="text" value="1" class="szamPlusz">
-                            <button type="button" class="btn btn-light btn-circle btn-sm ">+</button>
+                        <div id="field11">
+                            <button type="button" id="sub11" class=sub>-</button>
+                            <input type="text" id="11" value=0 class=field>
+                            <button type="button" id="add11" class=add>+</button>
                         </div>
                         <div id="kosarbaTesz">
                             <button type="button" class="btn btn-outline-danger ">
@@ -317,10 +319,10 @@
                         <p class="card-text my-title1">WC PAPÍR</p>
                         <span id="ar">1225</span>
                         <span> Ft</span>
-                        <div id="pluszMinusz">
-                            <button type="button" class="btn btn-light btn-circle btn-sm gombMeret">-</button>
-                            <input type="text" value="1" class="szamPlusz">
-                            <button type="button" class="btn btn-light btn-circle btn-sm ">+</button>
+                        <div id="field12">
+                            <button type="button" id="sub12" class=sub>-</button>
+                            <input type="text" id="12" value=0 class=field>
+                            <button type="button" id="add12" class=add>+</button>
                         </div>
                         <div id="kosarbaTesz">
                             <button type="button" class="btn btn-outline-danger ">
@@ -340,10 +342,10 @@
                         <p class="card-text my-title1">ZSEBKENDŐ</p>
                         <span id="ar">699</span>
                         <span> Ft</span>
-                        <div id="pluszMinusz">
-                            <button type="button" class="btn btn-light btn-circle btn-sm gombMeret">-</button>
-                            <input type="text" value="1" class="szamPlusz">
-                            <button type="button" class="btn btn-light btn-circle btn-sm ">+</button>
+                        <div id="field13">
+                            <button type="button" id="sub13" class=sub>-</button>
+                            <input type="text" id="13" value=0 class=field>
+                            <button type="button" id="add13" class=add>+</button>
                         </div>
                         <div id="kosarbaTesz">
                             <button type="button" class="btn btn-outline-danger ">
@@ -410,6 +412,8 @@
             </div>
         </div>
     </footer>
+
+    <script src="js/vasarlas.js"></script>
 </body>
 
 </html>

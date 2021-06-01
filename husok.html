@@ -22,6 +22,8 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
     <link rel="shortcut icon" type="image/x-icon" href="images/képek/disz/shopping_bag.png">
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
     <title>hus</title>
 </head>
 
@@ -66,10 +68,10 @@
                         <p class="card-text my-title1">CSIREKCOMB</p>
                         <span id="ar">599</span>
                         <span> Ft/kg</span>
-                        <div id="pluszMinusz">
-                            <button type="button" class="btn btn-light btn-circle btn-sm gombMeret">-</button>
-                            <input type="text" value="1" class="szamPlusz">
-                            <button type="button" class="btn btn-light btn-circle btn-sm ">+</button>
+                        <div id="field1">
+                            <button type="button" class=sub id="sub">-</button>
+                            <input type="text" id="1" value=0 class=field>
+                            <button type="button" id="add" class=add>+</button>
                         </div>
                         <div id="kosarbaTesz">
                             <button type="button" class="btn btn-outline-danger ">
@@ -89,10 +91,10 @@
                         <p class="card-text my-title1">CSIRKEFARHÁT</p>
                         <span id="ar">209</span>
                         <span> Ft/kg</span>
-                        <div id="pluszMinusz">
-                            <button type="button" class="btn btn-light btn-circle btn-sm gombMeret">-</button>
-                            <input type="text" value="1" class="szamPlusz">
-                            <button type="button" class="btn btn-light btn-circle btn-sm ">+</button>
+                        <div id="field2">
+                            <button type="button" id="sub2" class=sub>-</button>
+                            <input type="text" id="2" value=0 class=field>
+                            <button type="button" id="add2" class=add>+</button>
                         </div>
                         <div id="kosarbaTesz">
                             <button type="button" class="btn btn-outline-danger ">
@@ -112,10 +114,10 @@
                         <p class="card-text my-title1">CSIRKEMÁJ</p>
                         <span id="ar">898</span>
                         <span> Ft/kg</span>
-                        <div id="pluszMinusz">
-                            <button type="button" class="btn btn-light btn-circle btn-sm gombMeret">-</button>
-                            <input type="text" value="1" class="szamPlusz">
-                            <button type="button" class="btn btn-light btn-circle btn-sm ">+</button>
+                        <div id="field3">
+                            <button type="button" id="sub3" class=sub>-</button>
+                            <input type="text" id="3" value=0 class=field>
+                            <button type="button" id="add3" class=add>+</button>
                         </div>
                         <div id="kosarbaTesz">
                             <button type="button" class="btn btn-outline-danger ">
@@ -135,10 +137,10 @@
                         <p class="card-text my-title1">CSIRKEMELL</p>
                         <span id="ar">1499</span>
                         <span> Ft/kg</span>
-                        <div id="pluszMinusz">
-                            <button type="button" class="btn btn-light btn-circle btn-sm gombMeret">-</button>
-                            <input type="text" value="1" class="szamPlusz">
-                            <button type="button" class="btn btn-light btn-circle btn-sm ">+</button>
+                        <div id="field4">
+                            <button type="button" id="sub4" class=sub>-</button>
+                            <input type="text" id="4" value=0 class=field>
+                            <button type="button" id="add4" class=add>+</button>
                         </div>
                         <div id="kosarbaTesz">
                             <button type="button" class="btn btn-outline-danger ">
@@ -158,10 +160,10 @@
                         <p class="card-text my-title1">CSIRKESZÁRNY</p>
                         <span id="ar">1509</span>
                         <span> Ft/kg</span>
-                        <div id="pluszMinusz">
-                            <button type="button" class="btn btn-light btn-circle btn-sm gombMeret">-</button>
-                            <input type="text" value="1" class="szamPlusz">
-                            <button type="button" class="btn btn-light btn-circle btn-sm ">+</button>
+                        <div id="field5">
+                            <button type="button" id="sub5" class=sub>-</button>
+                            <input type="text" id="5" value=0 class=field>
+                            <button type="button" id="add5" class=add>+</button>
                         </div>
                         <div id="kosarbaTesz">
                             <button type="button" class="btn btn-outline-danger ">
@@ -181,10 +183,10 @@
                         <p class="card-text my-title1">DISZNÓLÁB</p>
                         <span id="ar">1355</span>
                         <span> Ft/kg</span>
-                        <div id="pluszMinusz">
-                            <button type="button" class="btn btn-light btn-circle btn-sm gombMeret">-</button>
-                            <input type="text" value="1" class="szamPlusz">
-                            <button type="button" class="btn btn-light btn-circle btn-sm ">+</button>
+                        <div id="field6">
+                            <button type="button" id="sub6" class=sub>-</button>
+                            <input type="text" id="6" value=0 class=field>
+                            <button type="button" id="add6" class=add>+</button>
                         </div>
                         <div id="kosarbaTesz">
                             <button type="button" class="btn btn-outline-danger ">
@@ -204,10 +206,10 @@
                         <p class="card-text my-title1">SONKA</p>
                         <span id="ar">2690</span>
                         <span> Ft/kg</span>
-                        <div id="pluszMinusz">
-                            <button type="button" class="btn btn-light btn-circle btn-sm gombMeret">-</button>
-                            <input type="text" value="1" class="szamPlusz">
-                            <button type="button" class="btn btn-light btn-circle btn-sm ">+</button>
+                        <div id="field7">
+                            <button type="button" id="sub7" class=sub>-</button>
+                            <input type="text" id="7" value=0 class=field>
+                            <button type="button" id="add7" class=add>+</button>
                         </div>
                         <div id="kosarbaTesz">
                             <button type="button" class="btn btn-outline-danger ">
@@ -227,10 +229,10 @@
                         <p class="card-text my-title1">SZALÁMI</p>
                         <span id="ar">579</span>
                         <span> Ft</span>
-                        <div id="pluszMinusz">
-                            <button type="button" class="btn btn-light btn-circle btn-sm gombMeret">-</button>
-                            <input type="text" value="1" class="szamPlusz">
-                            <button type="button" class="btn btn-light btn-circle btn-sm ">+</button>
+                        <div id="field8">
+                            <button type="button" id="sub8" class=sub>-</button>
+                            <input type="text" id="8" value=0 class=field>
+                            <button type="button" id="add8" class=add>+</button>
                         </div>
                         <div id="kosarbaTesz">
                             <button type="button" class="btn btn-outline-danger ">
@@ -250,10 +252,10 @@
                         <p class="card-text my-title1">SZALONNA</p>
                         <span id="ar">3329</span>
                         <span> Ft/kg</span>
-                        <div id="pluszMinusz">
-                            <button type="button" class="btn btn-light btn-circle btn-sm gombMeret">-</button>
-                            <input type="text" value="1" class="szamPlusz">
-                            <button type="button" class="btn btn-light btn-circle btn-sm ">+</button>
+                        <div id="field9">
+                            <button type="button" id="sub9" class=sub>-</button>
+                            <input type="text" id="9" value=0 class=field>
+                            <button type="button" id="add9" class=add>+</button>
                         </div>
                         <div id="kosarbaTesz">
                             <button type="button" class="btn btn-outline-danger ">
@@ -272,11 +274,10 @@
                     <div class="card-body">
                         <p class="card-text my-title1">VIRSLI</p>
                         <span id="ar">1993</span>
-                        <span> Ft/kg</span>
-                        <div id="pluszMinusz">
-                            <button type="button" class="btn btn-light btn-circle btn-sm gombMeret">-</button>
-                            <input type="text" value="1" class="szamPlusz">
-                            <button type="button" class="btn btn-light btn-circle btn-sm ">+</button>
+                        <div id="field10">
+                            <button type="button" id="sub10" class=sub>-</button>
+                            <input type="text" id="10" value=0 class=field>
+                            <button type="button" id="add10" class=add>+</button>
                         </div>
                         <div id="kosarbaTesz">
                             <button type="button" class="btn btn-outline-danger ">
@@ -344,6 +345,8 @@
             </div>
         </div>
     </footer>
+
+    <script src="js/vasarlas.js"></script>
 </body>
 
 </html>

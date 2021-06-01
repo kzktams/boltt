@@ -1,4 +1,4 @@
-
+/*
 window.addEventListener("load", init, false);
 
 function $(id) {
@@ -6,145 +6,43 @@ function $(id) {
 }
 
 function init() {
-    $("szam").addEventListener("click", vasarol, false);
+    $("szam2").addEventListener("click", vasarol, false);
 }
-/*
+
 let email = function() {
     onclick="document.getElementById('email').value = ''"
 }
-*/
+
 
 let email = function () {
     document.getElementById('email').value = '';
 }
-
-
-//forrás: https://codepen.io/baselakasha/pen/RZybYe
-window.onload=function(){
-    var minusBtn = document.getElementById("minus"),
-        plusBtn = document.getElementById("plus"),
-        numberPlace = document.getElementById("szam"),
-        submitBtn = document.getElementById("kosarbaTesz"),
-        number = 0, /// number value
-        min = 0, /// min number
-        max = 30; /// max number
-        
-    minusBtn.onclick = function(){
-        if (number>min){
-           number--; /// Minus 1 of the number
-           numberPlace.innerText = number ; /// Display the value in place of the number
-           
-        }
-        if(number == min) {        
-            numberPlace.style.color= "red";
-            setTimeout(function(){numberPlace.style.color= "black"},500)
-        }
-        else {
-          numberPlace.style.color="black";            
-           }
-                
-    }
-    plusBtn.onclick = function(){
-        if(number<max){
-           number++;
-           numberPlace.innerText = number ; /// Display the value in place of the number
-        }     
-        if(number == max){
-               numberPlace.style.color= "red";
-               setTimeout(function(){numberPlace.style.color= "black"},500)
-        }
-        else {
-               numberPlace.style.color= "black";
-               
-        }
-    }
-    submitBtn.onclick = function(){
-        alert("you choice : " + number);
-    }
-    
-}
-
-let vasarol = function (){
-    var minusBtn2 = document.getElementById("minus2"),
-        plusBtn2 = document.getElementById("plus2"),
-        numberPlace2 = document.getElementById("szam2"),
-        number2 = 0, /// number value
-        min2 = 0, /// min number
-        max2 = 30; /// max number
-        
-    minusBtn2.onclick = function(){
-        if (number2>min2){
-           number2--; /// Minus 1 of the number
-           numberPlace2.innerText = number2 ; /// Display the value in place of the number
-           
-        }
-        if(number2 == min2) {        
-            numberPlace2.style.color= "red";
-            setTimeout(function(){numberPlace2.style.color= "black"},500)
-        }
-        else {
-          numberPlace2.style.color="black";            
-           }
-                
-    }
-    plusBtn2.onclick = function(){
-        if(number2<max2){
-           number2++;
-           numberPlace2.innerText = number2 ; /// Display the value in place of the number
-        }     
-        if(number2 == max2){
-               numberPlace2.style.color= "red";
-               setTimeout(function(){numberPlace2.style.color= "black"},500)
-        }
-        else {
-               numberPlace2.style.color= "black";
-               
-        }
-    }
-
-    
-}
-
-/*
-
-// forrás: https://www.youtube.com/watch?v=GXsWa_6vnOo&t=306s
-//setting default attribute to disabled of minus button
-document.querySelector(".minus-btn").setAttribute("disabled", "disabled");
-
-
-//plus button
-document.querySelector(".plus-btn").addEventListener("click", function () {
-    //getting value of input
-    valueCount = document.getElementById("quantity").value;
-
-    //input value increment by 1
-    valueCount++;
-
-    //setting increment input value
-    document.getElementById("quantity").value = valueCount;
-
-    if (valueCount > 1) {
-        document.querySelector(".minus-btn").removeAttribute("disabled");
-        document.querySelector(".minus-btn").classList.remove("disabled")
-    }
-
-})
-
-//plus button
-document.querySelector(".minus-btn").addEventListener("click", function () {
-    //getting value of input
-    valueCount = document.getElementById("quantity").value;
-
-    //input value increment by 1
-    valueCount--;
-
-    //setting increment input value
-    document.getElementById("quantity").value = valueCount
-
-    if (valueCount == 1) {
-        document.querySelector(".minus-btn").setAttribute("disabled", "disabled")
-    }
-
-})
 */
 
+//plusz minusz 
+//forrás: https://stackoverflow.com/questions/31078632/multiple-plus-and-minus-buttons
+var total;
+// if user changes value in field
+$('.field').change(function() {
+  // maybe update the total here?
+}).trigger('change');
+
+$('.add').click(function() {
+  var target = $('.field', this.parentNode)[0];
+  target.value = +target.value + 1;
+});
+
+$('.sub').click(function() {
+  var target = $('.field', this.parentNode)[0];
+  if (target.value > 0) {
+    target.value = +target.value - 1;
+  }
+});
+
+//korsárba tesz + összeg
+let osszeg = 0;
+let kosar = [];
+function kosarbaTesz() {
+    let termek = document.getElementById("");
+    
+}
