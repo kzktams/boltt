@@ -1,18 +1,16 @@
-/*
-window.addEventListener("load", init, false);
+/*window.addEventListener("load", init, false);
 
 function $(id) {
     return document.getElementById(id);
 }
 
 function init() {
-    $("szam2").addEventListener("click", vasarol, false);
+    $("email").addEventListener("click", myFunction, false);
 }
 
 let email = function() {
     onclick="document.getElementById('email').value = ''"
 }
-
 
 let email = function () {
     document.getElementById('email').value = '';
@@ -55,3 +53,4 @@ function kosarbaTesz() {
 
 }
 */
+
