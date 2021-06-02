@@ -686,3 +686,14 @@ content: none;
   .kapcsolatText{
 	  color: rgb(128, 0, 0);
   }
+
+  .cikkFluid{
+	  background-color: rgb(128, 0, 0);
+	  color: rgb(242, 222, 163);
+	  padding-top: 60px;
+	  padding-bottom: 60px;
+  }
+
+  .cikkCimHely{
+	  padding-top: 100px;
+  }
