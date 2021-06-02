@@ -20,6 +20,7 @@
     <link rel="shortcut icon" type="image/x-icon" href="images/képek/disz/shopping_bag.png">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
     <title>alkohol</title>
 </head>
 
@@ -73,6 +74,9 @@
 
     <!-- TITLE -->
     <h1 class="text-center">Alkoholok</h1>
+
+
+
     <!-- GRID SYSTEM -->
     <div class="container">
         <div
@@ -83,18 +87,27 @@
                 <div class="card h-100 text-center">
                     <img src="../images/képek/alkohol/asahi.jpg" class="card-img-top termekKepek " alt="asahi">
                     <div class="card-body">
-                        <p class="card-text my-title1">ASAHI</p>
-                        <span id="ar">289</span>
-                        <span> Ft</span>
-                        <div id="field1" class="pluszMinuszRes">
-                            <button type="button" class="sub btn pluszMinusz btn-circle" id="sub">-</button>
-                            <input type="text" id="1" value=0 class="field mennyiseg">
-                            <button type="button" id="add" class="add btn pluszMinusz btn-circle">+</button>
+                        <div id='itemNev'>
+                        <span class="card-text my-title1" id="termek" value="asahi">ASAHI</span>
                         </div>
-                        <div id="kosarbaTesz">
-                            <button type="button" class="btn btn-outline-danger ">
-                                <i class="bi bi-cart-plus-fill" id="kosarbaTesz"> KOSÁRBA TESZ</i>
-                            </button>
+                        <div id='item1'>
+                            <span id="ar">289</span>
+                        </div>
+                        <span> Ft</span>
+                        <div id="cart-wrap">
+                            <div id="field1 cart-products" class="pluszMinuszRes">
+                                <button type="button" class="sub btn pluszMinusz btn-circle" id="sub">-</button>
+                                <input type="text" id="1 mennyiseg" value=0 class="field mennyiseg">
+                                <button type="button" id="add" class="add btn pluszMinusz btn-circle">+</button>
+                            </div>
+                            <div id="kosarbaTesz ">
+                                <button type="button" class="btn btn-outline-danger ">
+                                    <i class="bi bi-cart-plus-fill submitbutton" id="cart-items"> KOSÁRBA TESZ</i>
+                                </button>
+
+                            </div>
+                            <div id="cart-items"></div>
+
                         </div>
                     </div>
                 </div>
@@ -127,7 +140,8 @@
             <div class="col-lg-3 col-md-5 col-sm-7 col-7 p-2">
                 <!-- CARD -->
                 <div class="card h-100 text-center">
-                    <img src="../images/képek/alkohol/jackdaniels.jpg" class="card-img-top termekKepek " alt="ollókezü edward">
+                    <img src="../images/képek/alkohol/jackdaniels.jpg" class="card-img-top termekKepek "
+                        alt="ollókezü edward">
                     <div class="card-body">
                         <p class="card-text my-title1">JACK DANIEL'S</p>
                         <span id="ar">6290</span>
@@ -150,7 +164,8 @@
             <div class="col-lg-3 col-md-5 col-sm-7 col-7 p-2">
                 <!-- CARD -->
                 <div class="card h-100 text-center">
-                    <img src="../images/képek/alkohol/jagermaister.jpg" class="card-img-top termekKepek " alt="szavak kertje">
+                    <img src="../images/képek/alkohol/jagermaister.jpg" class="card-img-top termekKepek "
+                        alt="szavak kertje">
                     <div class="card-body">
                         <p class="card-text my-title1">JAGERMEISTER</p>
                         <span id="ar">5299</span>
@@ -173,7 +188,8 @@
             <div class="col-lg-3 col-md-5 col-sm-7 col-7 p-2">
                 <!-- CARD -->
                 <div class="card h-100 text-center">
-                    <img src="../images/képek/alkohol/jimbeam.jpg" class="card-img-top termekKepek " alt="szentjánosbogarak sírja">
+                    <img src="../images/képek/alkohol/jimbeam.jpg" class="card-img-top termekKepek "
+                        alt="szentjánosbogarak sírja">
                     <div class="card-body">
                         <p class="card-text my-title1">JIM BEAM</p>
                         <span id="ar">5325</span>
@@ -196,7 +212,8 @@
             <div class="col-lg-3 col-md-5 col-sm-7 col-7 p-2">
                 <!-- CARD -->
                 <div class="card h-100 text-center">
-                    <img src="../images/képek/alkohol/kobanyai.jpg" class="card-img-top termekKepek " alt="kaliforniai álom">
+                    <img src="../images/képek/alkohol/kobanyai.jpg" class="card-img-top termekKepek "
+                        alt="kaliforniai álom">
                     <div class="card-body">
                         <p class="card-text my-title1">KŐBÁNYAI</p>
                         <span id="ar">699</span>
@@ -219,7 +236,8 @@
             <div class="col-lg-3 col-md-5 col-sm-7 col-7 p-2">
                 <!-- CARD -->
                 <div class="card h-100 text-center">
-                    <img src="../images/képek/alkohol/somersby.jpg" class="card-img-top termekKepek " alt="éjszakai ragadozók">
+                    <img src="../images/képek/alkohol/somersby.jpg" class="card-img-top termekKepek "
+                        alt="éjszakai ragadozók">
                     <div class="card-body">
                         <p class="card-text my-title1">SOMERSBY</p>
                         <span id="ar">339</span>
@@ -249,7 +267,7 @@
                         <span> Ft</span>
                         <div id="field9" class="pluszMinuszRes">
                             <button type="button" id="sub9" class="sub btn pluszMinusz btn-circle">-</button>
-                            <input type="text" id="9" value=0 class="field mennyiseg" >
+                            <input type="text" id="9" value=0 class="field mennyiseg">
                             <button type="button" id="add9" class="add btn pluszMinusz btn-circle">+</button>
                         </div>
                         <div id="kosarbaTesz">
@@ -343,8 +361,11 @@
             </div>
         </div>
     </footer>
+
+    <script src="../js/vasarlas.js"></script>
+    <script src="../js/termekek.js"></script>
 </body>
 
-<script src="../js/vasarlas.js"></script>
+
 
 </html>
