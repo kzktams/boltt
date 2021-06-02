@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="../css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="../css/saját.css">
+    <script src="../js/bootstrap.min.js"></script>
+    <!--forrás: https://www.divinectorweb.com/2020/11/bootstrap-4-navbar-with-slider.html-->
+    <link href="https://fonts.googleapis.com/css2?family=Merienda&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <!-- forrás: https://www.w3schools.com/howto/howto_css_social_media_buttons.asp -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- forrás: https://www.w3schools.com/bootstrap4/bootstrap_icons.asp -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link rel="shortcut icon" type="image/x-icon" href="images/képek/disz/shopping_bag.png">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <title>alkohol</title>
+</head>
+
+<body>
+
+    <!--NAVBAR-->
+    <!--forrás részlet: https://www.divinectorweb.com/2020/11/bootstrap-4-navbar-with-slider.html-->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">online abc</a> <button aria-controls="navbarSupportedContent"
+                aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler"
+                data-target="#navbarSupportedContent" data-toggle="collapse" type="button"><span
+                    class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="../index.html">Kezdőlap</a>
+                    </li>
+                    <li class="nav-item ">
+
+                        <div class="dropdown">
+                            <button
+                                class="btn dropdown-toggle legordulo nav-link nav-item collapse navbar-collapse navbar-nav ml-auto "
+                                aria-haspopup="true" aria-expanded="false" type="button"
+                                data-toggle="dropdown">Kategóriák
+                                <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a href="elelmiszer.html">Élelmiszer</a></li>
+                                <li><a href="haztartas.html">Háztartás</a></li>
+                                <li><a href="husok.html">Hús</a></li>
+                                <li><a href="uditok.html">Üdítő</a></li>
+                                <li><a href="alkohol.html">Alkohol</a></li>
+                                <li><a href="jatekok.html">Játékok</a></li>
+                            </ul>
+                        </div>
+
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Összes termék</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Hírek</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+
+    <!-- TITLE -->
+    <h1 class="text-center">Alkoholok</h1>
+    <!-- GRID SYSTEM -->
+    <div class="container">
+        <div
+            class="row justify-content-lg-around justify-content-md-around justify-content-sm-around justify-content-center my-row">
+            <!-- COLUMN1 -->
+            <div class="col-lg-3 col-md-5 col-sm-7 col-7 p-2">
+                <!-- CARD -->
+                <div class="card h-100 text-center">
+                    <img src="../images/képek/alkohol/asahi.jpg" class="card-img-top termekKepek " alt="asahi">
+                    <div class="card-body">
+                        <p class="card-text my-title1">ASAHI</p>
+                        <span id="ar">289</span>
+                        <span> Ft</span>
+                        <div id="field1" class="pluszMinuszRes">
+                            <button type="button" class="sub btn pluszMinusz btn-circle" id="sub">-</button>
+                            <input type="text" id="1" value=0 class="field mennyiseg">
+                            <button type="button" id="add" class="add btn pluszMinusz btn-circle">+</button>
+                        </div>
+                        <div id="kosarbaTesz">
+                            <button type="button" class="btn btn-outline-danger ">
+                                <i class="bi bi-cart-plus-fill" id="kosarbaTesz"> KOSÁRBA TESZ</i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!-- CARD END -->
+            </div>
+            <!-- COLUMN2 -->
+            <div class="col-lg-3 col-md-5 col-sm-7 col-7 p-2">
+                <!-- CARD -->
+                <div class="card h-100 text-center">
+                    <img src="../images/képek/alkohol/heineken.jpeg" class="card-img-top termekKepek " alt="heineken">
+                    <div class="card-body">
+                        <p class="card-text my-title1">HEINEKEN</p>
+                        <span id="ar">269</span>
+                        <span> Ft</span>
+                        <div id="field2" class="pluszMinuszRes">
+                            <button type="button" id="sub2" class="sub btn pluszMinusz btn-circle">-</button>
+                            <input type="text" id="2" value=0 class="field mennyiseg">
+                            <button type="button" id="add2" class="add btn pluszMinusz btn-circle">+</button>
+                        </div>
+                        <div id="kosarbaTesz">
+                            <button type="button" class="btn btn-outline-danger">
+                                <i class="bi bi-cart-plus-fill" id="kosarbaTesz"> KOSÁRBA TESZ</i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!-- CARD END -->
+            </div>
+            <!-- COLUMN3 -->
+            <div class="col-lg-3 col-md-5 col-sm-7 col-7 p-2">
+                <!-- CARD -->
+                <div class="card h-100 text-center">
+                    <img src="../images/képek/alkohol/jackdaniels.jpg" class="card-img-top termekKepek " alt="ollókezü edward">
+                    <div class="card-body">
+                        <p class="card-text my-title1">JACK DANIEL'S</p>
+                        <span id="ar">6290</span>
+                        <span> Ft</span>
+                        <div id="field3" class="pluszMinuszRes">
+                            <button type="button" id="sub3" class="sub btn pluszMinusz btn-circle">-</button>
+                            <input type="text" id="3" value=0 class="field mennyiseg">
+                            <button type="button" id="add3" class="add btn pluszMinusz btn-circle">+</button>
+                        </div>
+                        <div id="kosarbaTesz">
+                            <button type="button" class="btn btn-outline-danger ">
+                                <i class="bi bi-cart-plus-fill" id="kosarbaTesz"> KOSÁRBA TESZ</i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!-- CARD END -->
+            </div>
+            <!-- COLUMN4 -->
+            <div class="col-lg-3 col-md-5 col-sm-7 col-7 p-2">
+                <!-- CARD -->
+                <div class="card h-100 text-center">
+                    <img src="../images/képek/alkohol/jagermaister.jpg" class="card-img-top termekKepek " alt="szavak kertje">
+                    <div class="card-body">
+                        <p class="card-text my-title1">JAGERMEISTER</p>
+                        <span id="ar">5299</span>
+                        <span> Ft</span>
+                        <div id="field4" class="pluszMinuszRes">
+                            <button type="button" id="sub4" class="sub btn pluszMinusz btn-circle">-</button>
+                            <input type="text" id="4" value=0 class="field mennyiseg">
+                            <button type="button" id="add4" class="add btn pluszMinusz btn-circle">+</button>
+                        </div>
+                        <div id="kosarbaTesz">
+                            <button type="button" class="btn btn-outline-danger ">
+                                <i class="bi bi-cart-plus-fill" id="kosarbaTesz"> KOSÁRBA TESZ</i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!-- CARD END -->
+            </div>
+            <!-- COLUMN5 -->
+            <div class="col-lg-3 col-md-5 col-sm-7 col-7 p-2">
+                <!-- CARD -->
+                <div class="card h-100 text-center">
+                    <img src="../images/képek/alkohol/jimbeam.jpg" class="card-img-top termekKepek " alt="szentjánosbogarak sírja">
+                    <div class="card-body">
+                        <p class="card-text my-title1">JIM BEAM</p>
+                        <span id="ar">5325</span>
+                        <span> Ft</span>
+                        <div id="field5" class="pluszMinuszRes">
+                            <button type="button" id="sub5" class="sub btn pluszMinusz btn-circle">-</button>
+                            <input type="text" id="5" value=0 class="field mennyiseg">
+                            <button type="button" id="add5" class="add btn pluszMinusz btn-circle">+</button>
+                        </div>
+                        <div id="kosarbaTesz">
+                            <button type="button" class="btn btn-outline-danger ">
+                                <i class="bi bi-cart-plus-fill" id="kosarbaTesz"> KOSÁRBA TESZ</i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!-- CARD END -->
+            </div>
+            <!-- COLUMN6 -->
+            <div class="col-lg-3 col-md-5 col-sm-7 col-7 p-2">
+                <!-- CARD -->
+                <div class="card h-100 text-center">
+                    <img src="../images/képek/alkohol/kobanyai.jpg" class="card-img-top termekKepek " alt="kaliforniai álom">
+                    <div class="card-body">
+                        <p class="card-text my-title1">KŐBÁNYAI</p>
+                        <span id="ar">699</span>
+                        <span> Ft</span>
+                        <div id="field6" class="pluszMinuszRes">
+                            <button type="button" id="sub6" class="sub btn pluszMinusz btn-circle">-</button>
+                            <input type="text" id="6" value=0 class="field mennyiseg">
+                            <button type="button" id="add6" class="add btn pluszMinusz btn-circle">+</button>
+                        </div>
+                        <div id="kosarbaTesz">
+                            <button type="button" class="btn btn-outline-danger ">
+                                <i class="bi bi-cart-plus-fill" id="kosarbaTesz"> KOSÁRBA TESZ</i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!-- CARD END -->
+            </div>
+            <!-- COLUMN7 -->
+            <div class="col-lg-3 col-md-5 col-sm-7 col-7 p-2">
+                <!-- CARD -->
+                <div class="card h-100 text-center">
+                    <img src="../images/képek/alkohol/somersby.jpg" class="card-img-top termekKepek " alt="éjszakai ragadozók">
+                    <div class="card-body">
+                        <p class="card-text my-title1">SOMERSBY</p>
+                        <span id="ar">339</span>
+                        <span> Ft</span>
+                        <div id="field7" class="pluszMinuszRes">
+                            <button type="button" id="sub7" class="sub btn pluszMinusz btn-circle">-</button>
+                            <input type="text" id="7" value=0 class="field mennyiseg">
+                            <button type="button" id="add7" class="add btn pluszMinusz btn-circle">+</button>
+                        </div>
+                        <div id="kosarbaTesz">
+                            <button type="button" class="btn btn-outline-danger ">
+                                <i class="bi bi-cart-plus-fill" id="kosarbaTesz"> KOSÁRBA TESZ</i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!-- CARD END -->
+            </div>
+            <!-- COLUMN8 -->
+            <div class="col-lg-3 col-md-5 col-sm-7 col-7 p-2">
+                <!-- CARD -->
+                <div class="card h-100 text-center">
+                    <img src="../images/képek/alkohol/törley.png" class="card-img-top termekKepek " alt="fogságban">
+                    <div class="card-body">
+                        <p class="card-text my-title1">TÖRLEY</p>
+                        <span id="ar">999</span>
+                        <span> Ft</span>
+                        <div id="field9" class="pluszMinuszRes">
+                            <button type="button" id="sub9" class="sub btn pluszMinusz btn-circle">-</button>
+                            <input type="text" id="9" value=0 class="field mennyiseg" >
+                            <button type="button" id="add9" class="add btn pluszMinusz btn-circle">+</button>
+                        </div>
+                        <div id="kosarbaTesz">
+                            <button type="button" class="btn btn-outline-danger ">
+                                <i class="bi bi-cart-plus-fill" id="kosarbaTesz"> KOSÁRBA TESZ</i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!-- CARD END -->
+            </div>
+            <!-- COLUMN9 -->
+            <div class="col-lg-3 col-md-5 col-sm-7 col-7 p-2">
+                <!-- CARD -->
+                <div class="card h-100 text-center">
+                    <img src="../images/képek/alkohol/unicum.jpg" class="card-img-top termekKepek " alt="submarine">
+                    <div class="card-body">
+                        <p class="card-text my-title1">UNICUM</p>
+                        <span id="ar">5990</span>
+                        <span> Ft</span>
+                        <div id="field10" class="pluszMinuszRes">
+                            <button type="button" class="sub btn pluszMinusz btn-circle" id="sub10">-</button>
+                            <input type="text" id="10" value=0 class="field mennyiseg">
+                            <button type="button" id="add10" class="add btn pluszMinusz btn-circle">+</button>
+                        </div>
+                        <div id="kosarbaTesz">
+                            <button type="button" class="btn btn-outline-danger ">
+                                <i class="bi bi-cart-plus-fill" id="kosarbaTesz"> KOSÁRBA TESZ</i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!-- CARD END -->
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- FOOTER -->
+    <footer class="container-fluid text-center">
+        <div class="row footerMedia">
+            <div class="col-md-12">
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-twitter"></a>
+                <a href="#" class="fa fa-google"></a>
+                <a href="#" class="fa fa-linkedin"></a>
+                <a href="#" class="fa fa-youtube"></a>
+                <a href="#" class="fa fa-pinterest"></a>
+            </div>
+        </div>
+        <div class="container  text-center text-md-left mt-5">
+            <div class="row justify-content-center mt-3">
+                <div class="col-md-3 col-sm-12 mx-auto mb-4">
+                    <h6 class="text-uppercase font-weight-bold cimFooter">Segítünk</h6>
+                    <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto alahuzas cimalahuzas">
+                    <p><a href="#" class="link1">Kapcsolat</a><br></p>
+                    <p><a href="#" class="link1">Pénzvisszafizetés és Visszaküldés</a><br></p>
+                    <p><a href="allas.html" class="link1">Álláshirdetés</a><br></p>
+                    <p><a href="#" class="link1">Szállítási Információk</a><br></p>
+
+
+                </div>
+
+                <div class="col-md-3 col-sm-12 mx-auto mb-4">
+                    <h6 class="text-uppercase font-weight-bold cimFooter">Csatlakozz hozzánk</h6>
+                    <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto alahuzas cimalahuzas">
+                    <p><a href="#" class="link1">Csatlakozás</a><br></p>
+                    <p><a href="#" class="link1">Bejelentkezés</a><br></p>
+                    <p><a href="#" class="link1">Profil szerkesztése</a><br></p>
+                </div>
+                <div class="col-md-2 col-sm-12 mx-auto mb-4">
+                    <h6 class="text-uppercase font-weight-bold cimFooter">Cégünk</h6>
+                    <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto alahuzas cimalahuzas">
+                    <p><a href="#" class="link1">Rólunk</a><br></p>
+                    <p><a href="#" class="link1">Alkalmazottainkról</a><br></p>
+                    <p><a href="#" class="link1">Árazás</a><br></p>
+                    <p><a href="#" class="link1">Üzletszabályzat</a><br></p>
+                    <p><a href="#" class="link1">FAQ</a><br></p>
+                </div>
+            </div>
+        </div>
+        <hr class="alahuzas">
+        <div class="row">
+            <div class="col-md-6 col-sm-12 text-md-left order-lg-1 order-2">
+                <img src="../images/képek/disz/logo2.png" alt="logó">
+            </div>
+            <div class="col-md-6 col-sm-12 text-md-right order-lg-2 order-1">
+                <p><a href="#" class="link1">Adatvédelem</a><br></p>
+                <p><a href="#" class="link1">Általános szerződési feltételek</a><br></p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+<script src="../js/vasarlas.js"></script>
+
+</html>
