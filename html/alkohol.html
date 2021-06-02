@@ -21,6 +21,11 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.6.19/dist/css/uikit.min.css" />
+    <script src="https://kit.fontawesome.com/33e495fb35.js" crossorigin="anonymous"></script>
+
     <title>alkohol</title>
 </head>
 
@@ -91,7 +96,7 @@
                         <span class="card-text my-title1" id="termek" value="asahi">ASAHI</span>
                         </div>
                         <div id='item1'>
-                            <span id="ar">289</span>
+                            <span id="ar" >289</span>
                         </div>
                         <span> Ft</span>
                         <div id="cart-wrap">
@@ -102,7 +107,7 @@
                             </div>
                             <div id="kosarbaTesz ">
                                 <button type="button" class="btn btn-outline-danger ">
-                                    <i class="bi bi-cart-plus-fill submitbutton" id="cart-items"> KOSÁRBA TESZ</i>
+                                    <i class="bi bi-cart-plus-fill submitbutton btn-primary" id="cart-items"> KOSÁRBA TESZ</i>
                                 </button>
 
                             </div>
@@ -128,7 +133,7 @@
                         <span> Ft</span>
                         <div id="field2" class="pluszMinuszRes">
                             <button type="button" id="sub2" class="sub btn pluszMinusz btn-circle">-</button>
-                            <input type="text" id="2 txt_name" value=0 class="field mennyiseg">
+                            <input type="text" id="2 mennyi" value=0 class="field mennyiseg">
                             <button type="button" id="add2" class="add btn pluszMinusz btn-circle">+</button>
                         </div>
                         <div id="kosarbaTesz">
@@ -145,19 +150,23 @@
                 <!-- CARD -->
                 <div class="card h-100 text-center">
                     <img src="../images/képek/alkohol/jackdaniels.jpg" class="card-img-top termekKepek "
-                        alt="ollókezü edward">
+                        alt="jack daniels">
                     <div class="card-body">
+                    <div id='itemNev3'>
                         <p class="card-text my-title1">JACK DANIEL'S</p>
+                    </div>
+                    <div id='item3'>
                         <span id="ar">6290</span>
+                    </div>
                         <span> Ft</span>
                         <div id="field3" class="pluszMinuszRes">
                             <button type="button" id="sub3" class="sub btn pluszMinusz btn-circle">-</button>
-                            <input type="text" id="3" value=0 class="field mennyiseg">
+                            <input type="text" id="3 mennyi3" value=0 class="field mennyiseg">
                             <button type="button" id="add3" class="add btn pluszMinusz btn-circle">+</button>
                         </div>
                         <div id="kosarbaTesz">
                             <button type="button" class="btn btn-outline-danger ">
-                                <i class="bi bi-cart-plus-fill" id="kosarbaTesz"> KOSÁRBA TESZ</i>
+                                <i class="bi bi-cart-plus-fill submitbutton3" id="kosarbaTesz"> KOSÁRBA TESZ</i>
                             </button>
                         </div>
                     </div>
@@ -169,7 +178,7 @@
                 <!-- CARD -->
                 <div class="card h-100 text-center">
                     <img src="../images/képek/alkohol/jagermaister.jpg" class="card-img-top termekKepek "
-                        alt="szavak kertje">
+                        alt="jagermaister">
                     <div class="card-body">
                         <p class="card-text my-title1">JAGERMEISTER</p>
                         <span id="ar">5299</span>
@@ -193,7 +202,7 @@
                 <!-- CARD -->
                 <div class="card h-100 text-center">
                     <img src="../images/képek/alkohol/jimbeam.jpg" class="card-img-top termekKepek "
-                        alt="szentjánosbogarak sírja">
+                        alt="jim beam">
                     <div class="card-body">
                         <p class="card-text my-title1">JIM BEAM</p>
                         <span id="ar">5325</span>
@@ -217,7 +226,7 @@
                 <!-- CARD -->
                 <div class="card h-100 text-center">
                     <img src="../images/képek/alkohol/kobanyai.jpg" class="card-img-top termekKepek "
-                        alt="kaliforniai álom">
+                        alt="kobanyai">
                     <div class="card-body">
                         <p class="card-text my-title1">KŐBÁNYAI</p>
                         <span id="ar">699</span>
@@ -241,7 +250,7 @@
                 <!-- CARD -->
                 <div class="card h-100 text-center">
                     <img src="../images/képek/alkohol/somersby.jpg" class="card-img-top termekKepek "
-                        alt="éjszakai ragadozók">
+                        alt="somersby">
                     <div class="card-body">
                         <p class="card-text my-title1">SOMERSBY</p>
                         <span id="ar">339</span>
@@ -264,7 +273,7 @@
             <div class="col-lg-3 col-md-5 col-sm-7 col-7 p-2">
                 <!-- CARD -->
                 <div class="card h-100 text-center">
-                    <img src="../images/képek/alkohol/törley.png" class="card-img-top termekKepek " alt="fogságban">
+                    <img src="../images/képek/alkohol/törley.png" class="card-img-top termekKepek " alt="torley">
                     <div class="card-body">
                         <p class="card-text my-title1">TÖRLEY</p>
                         <span id="ar">999</span>
@@ -287,7 +296,7 @@
             <div class="col-lg-3 col-md-5 col-sm-7 col-7 p-2">
                 <!-- CARD -->
                 <div class="card h-100 text-center">
-                    <img src="../images/képek/alkohol/unicum.jpg" class="card-img-top termekKepek " alt="submarine">
+                    <img src="../images/képek/alkohol/unicum.jpg" class="card-img-top termekKepek " alt="unicum">
                     <div class="card-body">
                         <p class="card-text my-title1">UNICUM</p>
                         <span id="ar">5990</span>
@@ -309,6 +318,7 @@
 
         </div>
     </div>
+
 
 
     <!-- FOOTER -->
