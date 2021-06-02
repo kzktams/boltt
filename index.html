@@ -22,6 +22,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="shortcut icon" type="image/x-icon" href="images/képek/disz/shopping_bag.png">
     <link href='https://fonts.googleapis.com/css?family=Satisfy' rel='stylesheet'>
+    <!-- forrás: https://www.cdnpkg.com/jquery/1.7.1 -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
     <title>Online Abc</title>
 </head>
@@ -71,10 +72,10 @@
             </div>
         </div>
     </nav>
-
-    <div id="home">
+    <div class="belebeg">
+    <div id="home"">
       <div class="landing-szoveg">
-        <div class="belebeg">
+        
         <h1>ONLINE ABC</h1>
         <h3>Vásárolj be nálunk a mindennapokra</h3>
         <a href="#" class="btn btnfocim btn-2">Vásárlás</a> 
@@ -359,6 +360,7 @@
         </div>
     </footer>
     <script>
+      // forrás: http://jsfiddle.net/e5qaD/4837/
       $(document).ready(function() {
     $(window).scroll( function(){
         $('.hideme').each( function(i){
@@ -367,9 +369,7 @@
             if( bottom_of_window > bottom_of_object ){
                 $(this).addClass('showme');
             }
-            if( bottom_of_window < bottom_of_object ){
-                $(this).removeClass('showme');
-            }
+            
         });
     });
 });
