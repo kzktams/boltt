@@ -697,3 +697,40 @@ content: none;
   .cikkCimHely{
 	  padding-top: 100px;
   }
+
+  .allasCont{
+	border: gray 1px solid;
+	border-radius: 25px;
+	box-shadow: gray 1px 1px 1px 1px;
+	padding: 25px;
+  }
+
+  .allasInput{
+	border: none;
+	border-bottom: solid 3px rgb(128, 0, 0);
+	outline: none;
+}
+.allasKulsoCont{
+	padding-top: 100px;
+	padding-bottom: 100px;
+}
+
+#fixed{
+	background: url(../images/képek/stock/stock12.jpg) no-repeat center center fixed;
+	display: table;
+	height: 400px;
+	position: relative;
+	width: 100%;
+	background-size: cover;
+}
+
+.allasCim{
+	color: rgb(128, 0, 0);
+	font-weight: bold;
+	text-align: center;
+	text-transform: uppercase;
+	padding-top: 40px;
+}
+.allasValami{
+	padding-bottom: 100px;
+}

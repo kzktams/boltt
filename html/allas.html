@@ -20,55 +20,59 @@
     <title>Document</title>
 </head>
 <body>
+  <div class="text-center allasValami">
+  <h1 class="allasCim">Jelentkezz állásra</h1>
+  <a type="button" class="btn  headerGomb1" href="#allas">Jelentkezek</a>
+</div>
+  <div id="fixed">
+  </div>
+
+  <div class="allasKulsoCont">
     <div class="container-fluid formnak">
-        <div class="container formnak">
-    <form>
+      
+        <div class="container formnak allasCont">
+    <form><a name="allas"></a>
         <div class="form-row">
             <div class="form-group col-md-6">
+              <label class="bejelentkezesLabel"> Vezetéknév</label>
               
-                <input type="text" class="form-control" placeholder="Vezetéknév">
+                <input type="text" class="form-control allasInput" placeholder="Vezetéknév">
               </div>
               <div class="form-group col-md-6">
+                <label class="bejelentkezesLabel"> Keresztnév</label>
               
-                <input type="text" class="form-control" placeholder="Keresztnév">
+                <input type="text" class="form-control allasInput" placeholder="Keresztnév">
               </div>
               <div class="form-group col-md-12">
-              
-                <input type="date" class="form-control" placeholder="Születési év">
+                <label class="bejelentkezesLabel"> Születési dátum</label>
+                <input type="date" class="form-control allasInput" placeholder="Születési év">
               </div>
             
             <div class="form-group col-md-6">
-              
-              <input type="email" class="form-control" id="email" placeholder="Email-cím">
+              <label class="bejelentkezesLabel">Email-cím</label>
+              <input type="email" class="form-control allasInput" id="email" placeholder="Email-cím">
             </div>
-            <div class="form-group col-md-6">
-              
-              <input type="password" class="form-control" id="jelszo" placeholder="Jelszó">
-            </div>
-            <div class="form-group col-md-12">
-              
-                <input type="password" class="form-control" id="jelszo2" placeholder="Jelszó megerősítése">
-              </div>
-              <div class="form-group col-md-12">
-              
-                <input type="tel" class="form-control" id="telefon" placeholder="Telefonszám">
+
+              <div class="form-group col-md-6">
+                <label class="bejelentkezesLabel"> Telefonszám</label>
+                <input type="tel" class="form-control allasInput" id="telefon" placeholder="Telefonszám">
               </div>
           </div>
           <div class="form-group">
-            
-            <input type="text" class="form-control" id="inputAddress" placeholder="Utca, házszám">
+            <label class="bejelentkezesLabel">Utca, házszám</label>
+            <input type="text" class="form-control allasInput" id="inputAddress" placeholder="Utca, házszám">
           </div>
           <div class="form-group">
-            
-            <input type="text" class="form-control" id="inputAddress2" placeholder="Emelet, ajtó">
+            <label class="bejelentkezesLabel">Emelet ajtó</label>
+            <input type="text" class="form-control allasInput" id="inputAddress2" placeholder="Emelet, ajtó">
           </div>
           <div class="form-row">
             <div class="form-group col-md-6">
-              
-              <input type="text" class="form-control" id="varos" placeholder="Város">
+              <label class="bejelentkezesLabel">Város</label>
+              <input type="text" class="form-control allasInput" id="varos" placeholder="Város">
             </div>
             <div class="form-group col-md-4">
-              
+              <Label class="bejelentkezesLabel">Megye</Label>
               <select id="Megye" class="form-control">
                 <option selected>Megye...</option>
                 <option>Bács-Kiskun</option>
@@ -94,12 +98,14 @@
               </select>
             </div>
             <div class="form-group col-md-2">
-            
+            <label class="bejelentkezesLabel">Irányítószám</label>
               <input type="text" class="form-control" id="iranyitoSzam" placeholder="Írányítószám">
             </div>
           </div>
+          <button type="button" class="btn  headerGomb1">Elküldés</button>
       </form>
     </div>
+  </div>
 </div>
 <!-- Footer -->
 <footer class="container-fluid text-center">
