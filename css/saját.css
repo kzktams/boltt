@@ -614,3 +614,19 @@ content: none;
 	opacity:1!important;
 	-webkit-transition: all 1s ease; transition: all 1s ease;
   }
+
+  ul{
+	  color: rgb(128, 0, 0);
+  }
+
+  .kategoriaLink{
+	  text-decoration: none;
+	  font-size: 30px;
+	  font-family: serif;
+	  color: rgb(128, 0, 0);
+  }
+
+  .kategoriaLink:hover{
+	  text-decoration: none;
+	  color: rgb(78, 1, 1);
+  }
