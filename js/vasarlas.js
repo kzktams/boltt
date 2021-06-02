@@ -1,21 +1,25 @@
-/*window.addEventListener("load", init, false);
+/*
+window.addEventListener("load", init, false);
 
 function $(id) {
     return document.getElementById(id);
 }
 
 function init() {
-    $("email").addEventListener("click", myFunction, false);
+    $("feliratkozas").addEventListener("click", email, false);
 }
-
+/*
 let email = function() {
-    onclick="document.getElementById('email').value = ''"
-}
-
-let email = function () {
-    document.getElementById('email').value = '';
+    onclick="document.getElementById('email').value = ''";
 }
 */
+
+/*
+let email = function () {
+    document.getElementById('email').value='';
+}
+*/
+
 
 //plusz minusz 
 //forrás: https://stackoverflow.com/questions/31078632/multiple-plus-and-minus-buttons
@@ -53,4 +57,5 @@ function kosarbaTesz() {
 
 }
 */
+
 
