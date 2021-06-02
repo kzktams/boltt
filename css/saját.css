@@ -630,3 +630,39 @@ content: none;
 	  text-decoration: none;
 	  color: rgb(78, 1, 1);
   }
+
+  .bejelentkezesCol{
+	  border: gray 1px solid;
+	  border-radius: 25px;
+	  box-shadow: gray 1px 1px 1px 1px;
+	  padding: 25px;
+  }
+
+  .bejelentkezesKulsoCont{
+	  padding-top: 150px;
+	  padding-bottom: 250px;
+  }
+
+  .bejelentkezesInput{
+	  border: none;
+	  border-bottom: solid 3px rgb(128, 0, 0);
+	  outline: none;
+	  width: 100%;
+  }
+
+  .bejelentkezesInput:focus{
+	border-bottom: solid 3px rgb(242, 222, 163);
+}
+
+  .bejelentkezesGombLentebb{
+	  padding-top: 10px;
+  }
+
+  .bejelentkezesLink{
+	  font-size: 13px;
+  }
+  .bejelentkezesLabel{
+	  padding-top: 5px;
+	  color: rgb(128, 0, 0);
+	  font-weight: bold;
+  }
