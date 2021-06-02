@@ -673,3 +673,16 @@ content: none;
 	  text-align: center;
 	  text-transform: uppercase;
   }
+
+  .motto{
+	font-family: 'Satisfy';
+  }
+
+  .myIcon{
+	  height: 24px;
+	  width: 24px;
+  }
+
+  .kapcsolatText{
+	  color: rgb(128, 0, 0);
+  }
