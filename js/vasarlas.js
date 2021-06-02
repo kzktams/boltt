@@ -1,28 +1,6 @@
-/*
-window.addEventListener("load", init, false);
-
-function $(id) {
-    return document.getElementById(id);
-}
-
-function init() {
-    $("feliratkozas").addEventListener("click", email, false);
-}
-/*
-let email = function() {
-    onclick="document.getElementById('email').value = ''";
-}
-*/
-
-/*
-let email = function () {
-    document.getElementById('email').value='';
-}
-*/
-
-
 //plusz minusz 
 //forrás: https://stackoverflow.com/questions/31078632/multiple-plus-and-minus-buttons
+
 var total;
 // if user changes value in field
 $('.field').change(function() {
@@ -41,93 +19,11 @@ $('.sub').click(function() {
   }
 });
 
-/*
-
-//korsárba tesz + összeg
-let osszeg = 0;
-let termekek = [];
-let mennyisegek = [];
-function kosarbaTesz() {
-    let termek = document.getElementById('.field');
-    let mennyiseg = document.getElementById('.field').value;
-    if(document.getElementById("kosarbaTesz").onclick){
-        kosar.push(termek);
-    }
-    
-
-}
-*/
-
 //kosár
-/*
-function kosar() {
-  let termekek = [];
-  let termekNev = document.getElementById('termek').value;
-  let ar = document.getElementById("ar").value;
-  let mennyiseg = document.getElementById('.field').value
-  var mennyiseg = $('.field', this.parentNode)[0];
-
-  termekek.push(termekNev);
-}*/
-
-/*
-let termek = {
-  termekek: [],
-  termeknev: document.getElementById('termek').value, 
-  ar: document.getElementById("ar").value, 
-  mennyiseg: document.getElementById('.field').value
-};
-
-//termékek 
-var products = {
-  123: {
-    name : "asahi",
-    img : "asahi.jpg",
-    price : 2034
-  },
-  124: {
-    name : "haineken",
-    img : "dummy-pdt-b.jpg",
-    price : 1247
-  },
-  125: {
-    name : "unicum",
-    img : "dummy-pdt-a.jpg",
-    price : 675
-  },
-  126: {
-    name : "jager",
-    img : "dummy-pdt-a.jpg",
-    price : 842
-  }
-};
-
-$('.kosar').click(function() {
-  //let termekek = [];
-  //let termekNev = document.getElementById('termek').value;
-  //let ar = document.getElementById("ar").value;
-  //let mennyiseg = document.getElementById('.field').value;
-
-  /*
-  let termek = {
-    termekek: [],
-    termeknev: document.getElementById('termek').value, 
-    ar: document.getElementById("ar").value, 
-    //mennyiseg: document.getElementById('.field').value
-  };
-
-  var termekek= [];
-  var kosar = $('.field', this.parentNode)[0];
-  termekek.push(products);
-  console.log("lefut");
-  console.log(products.name);
-});
-*/
-
 $('.submitbutton').click(function() {
-var termekek = [];
-var termekekNeve = [];
-var osszAr = [];
+let termekek = [];
+let termekekNeve = [];
+let osszAr = [];
 var ar = $('#item1 span').text();
 var nev = $('#itemNev span').text();
 var mennyiseg = $("input:text").val();
@@ -143,3 +39,49 @@ console.log(termekekNeve);
 console.log(mennyiseg);
 console.log(osszAr);
 });
+
+$('.submitbutton2').click(function() {
+  termekek = [];
+  termekekNeve = [];
+  osszAr = [];
+  var ar2 = $('#item2 span').text();
+  var nev2 = $('#itemNev2 span').text();
+  var mennyiseg2 = $("#txt_name").val();
+  
+  var osszeg2 = ar2*mennyiseg2;
+   
+  termekek.push(ar2);
+  termekekNeve.push(nev2);
+  osszAr.push(osszeg2);
+  
+  console.log(termekek);
+  console.log(termekekNeve);
+  console.log(mennyiseg2);
+  console.log(osszAr);
+
+  console.log(termekek);
+});
+
+
+
+/*
+function kosar() {
+  var termekek = [];
+  var termekekNeve = [];
+  var osszAr = [];
+  var ar2 = $("ar").text();
+  var nev2 = $("hein").text();
+  var mennyiseg2 = $('txt_name').value;
+  
+  var osszeg2 = ar2*mennyiseg2;
+   
+  termekek.push(ar2);
+  termekekNeve.push(nev2);
+  osszAr.push(osszeg2);
+  
+  console.log(termekek);
+  console.log(termekekNeve);
+  console.log(mennyiseg2);
+  console.log(osszAr);
+}
+*/
