@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="../css/bootstrap-grid.min.css">
     <link rel="stylesheet" href="../css/bootstrap-reboot.min.css">
     <link rel="stylesheet" href="../css/saját.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="../js/bootstrap.min.js"></script>
     <!--forrás: https://www.divinectorweb.com/2020/11/bootstrap-4-navbar-with-slider.html-->
     <link href="https://fonts.googleapis.com/css2?family=Merienda&display=swap" rel="stylesheet">
@@ -21,38 +22,45 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 
-    <title>jatek</title>
+    <title>Online ABC - Láték</title>
 </head>
 
 <body>
     <!--NAVBAR-->
-    <!--forrás részlet: https://www.divinectorweb.com/2020/11/bootstrap-4-navbar-with-slider.html-->
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
-        <div class="container">
-            <a class="navbar-brand" href="#">Creativo</a> <button aria-controls="navbarSupportedContent"
-                aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler"
-                data-target="#navbarSupportedContent" data-toggle="collapse" type="button"><span
-                    class="navbar-toggler-icon"></span></button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Kezdőlap</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Kategóriák</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Összes termék</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Hírek</a>
-                    </li>
-                </ul>
-            </div>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="#"><img src="../images/képek/disz/logo1.png" class="navImg"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav ml-auto navbarLi">
+            <li class="nav-item active">
+              <a class="nav-link navLink" href="../index.html">Kezdőlap</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link navLink" href="../index.html/#cikkek">Cikkek</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link navLink" href="../html/allas.html">Állás</a>
+            </li>
+            <li class="nav-item dropdown active">
+              <a class="nav-link navLink dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Kategóriák
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item navLink" href="../html/alkohol.html">Alkohol</a>
+                <a class="dropdown-item navLink" href="../html/elelmiszer.html">Élelmiszer</a>
+                <a class="dropdown-item navLink" href="../html/haztartas.html">Háztartás</a>
+                <a class="dropdown-item navLink" href="../html/husok.html">Húsok</a>
+                <a class="dropdown-item navLink" href="#">Játékok</a>
+                <a class="dropdown-item navLink" href="../html/uditok.html">Üdítők</a>
+              </div>
+            </li>
+          </ul>
         </div>
-    </nav>
+      </nav>
     <!-- TITLE -->
-    <h1 class="text-center">Játékok</h1>
+    <h1 class="text-center allasCim">Játékok</h1>
     <!-- GRID SYSTEM -->
     <div class="container">
         <div
