@@ -669,6 +669,12 @@ content: none;
 	padding-bottom: 100px;
 }
 
+.allasOneletrajz{
+	color: rgb(128, 0, 0);
+	font-size: 14px;
+	font-style: italic;
+}
+
 #fixed{
 	background: url(../images/képek/stock/stock12.jpg) no-repeat center center fixed;
 	display: table;
@@ -756,3 +762,5 @@ nav{
   .navbar-light .navbar-text a:hover, .navbar-light .navbar-text a:focus {
 	color: rgb(128, 0, 0);
   }
+
+  
