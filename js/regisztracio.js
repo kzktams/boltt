@@ -17,7 +17,6 @@ let ures = function () {
     let jelszoKetto = $("jelszo2").value;
     //let elerheto = $("oldalLink").disabled = true;
 
-/* 
         if ($("bejelentkezE").value < 1) {
             $("ures1").innerHTML = "Ne hagyjon üres mezőket!";
         }
@@ -31,13 +30,8 @@ let ures = function () {
             $("ures3").innerHTML = "A jelszó  nem egyezik";
         }
 
-        $("gomb").disabled = false;*/
+        //$("gomb").disabled = false;
 
-        if($("bejelentkezE").value < 1 && $("jelszo").value < 1 && $("jelszo2").value < 1){
-            $("ures3").innerHTML = "Ne hagyjon üres mezőket!";
-        }else{
-            $("oldalLink").disabled = false;
-        }
     
 }
 
