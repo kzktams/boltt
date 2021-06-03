@@ -61,14 +61,26 @@
             <div class="row justify-content-center">
                 <div class="col-5 bejelentkezesCol">
                     <form action="/action_page.php" >
-                        <label class="bejelentkezesLabel">Email-cím:</label><br>
+                        <label class="bejelentkezesLabel is-valid">Email-cím:</label><br>
                         <input type="email" placeholder="Email-cím" id="bejelentkezE" class="bejelentkezesInput"><br>
+                        <div class="invalid-feedback" >
+                            <p><span id="ures1"></span></p>
+                        </div>
                         <label class="bejelentkezesLabel">Jelszó</label><br>
                         <input type="password" placeholder="Jelszó" id="jelszo" class="bejelentkezesInput" name="text1"><br>
-                        <label class="bejelentkezesLabel">Jelszó megerősítése</label><br>
-                        <input type="password" placeholder="Jelszó megerősítése" id="jelszo2" class="bejelentkezesInput"><br>
+                        <div class="invalid-feedback" >
+                            <span id="ures2"></span>
+                        </div>
+                        <label class="bejelentkezesLabel is-invalid">Jelszó megerősítése</label><br>
+                        <input type="password" placeholder="Jelszó megerősítése" id="jelszo2" class="bejelentkezesInput is-invalid"><br>
+                        <div class="invalid-feedback">
+                            <span id="ures3"></span>
+                        </div>
                         <div class="bejelentkezesGombLentebb">
-                        <button type="button" class="btn  headerGomb1 " id="gomb">Bejelentkezés</button><br>
+                        <button type="button" class="btn  headerGomb1" id="gomb" >
+                            <a href="../../index.html" class="isDisabled" id="oldalLink">
+                            Bejelentkezés</a>
+                        </button><br>
                         <a href="bejelentkezes.html" class="bejelentkezesLink">Van már profilja?</a>
                     </div>
                     </form>
