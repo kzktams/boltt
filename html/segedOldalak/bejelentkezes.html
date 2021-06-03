@@ -9,8 +9,9 @@
     <link rel="stylesheet" href="../../css/bootstrap-grid.min.css">
     <link rel="stylesheet" href="../../css/bootstrap-reboot.min.css">
     <!--<script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="../../js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="../../css/saját.css">
+    
     <!--forrás: https://www.divinectorweb.com/2020/11/bootstrap-4-navbar-with-slider.html-->
     <link href="https://fonts.googleapis.com/css2?family=Merienda&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
@@ -24,36 +25,45 @@
     <link href='https://fonts.googleapis.com/css?family=Satisfy' rel='stylesheet'>
     <!-- forrás: https://www.cdnpkg.com/jquery/1.7.1 -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="../../css/saját.css">
     <title>Online Abc</title>
 </head>
 
 <body>
     <!--NAVBAR-->
 
-    <nav class="navbar navbar-expand-lg navbar-light ">
-        <div class="container">
-            <a class="navbar-brand" href="#">Online ABC</a> <button aria-controls="navbarSupportedContent"
-                aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler"
-                data-target="#navbarSupportedContent" data-toggle="collapse" type="button"><span
-                    class="navbar-toggler-icon"></span></button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Kezdőlap</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Kategóriák</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Összes termék</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Hírek</a>
-                    </li>
-                </ul>
-            </div>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="#"><img src="../../images/képek/disz/logo1.png" class="navImg"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav ml-auto navbarLi">
+            <li class="nav-item active">
+              <a class="nav-link navLink" href="../../index.html">Kezdőlap</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link navLink" href="../../index.html/#cikkek">Cikkek</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link navLink" href="../../html/allas.html">Állás</a>
+            </li>
+            <li class="nav-item dropdown active">
+              <a class="nav-link navLink dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Kategóriák
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item navLink" href="../html/alkohol.html">Alkohol</a>
+                <a class="dropdown-item navLink" href="../html/elelmiszer.html">Élelmiszer</a>
+                <a class="dropdown-item navLink" href="../html/haztartas.html">Háztartás</a>
+                <a class="dropdown-item navLink" href="#">Húsok</a>
+                <a class="dropdown-item navLink" href="../html/jatekok.html">Játékok</a>
+                <a class="dropdown-item navLink" href="../html/uditok.html">Üdítők</a>
+              </div>
+            </li>
+          </ul>
         </div>
-    </nav>
+      </nav>
     <h1 class="bejelentkezesCim"> Bejelentkezés</h1>
     <div class="bejelentkezesKulsoCont">
         <div class="container">
