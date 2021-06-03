@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="../css/bootstrap-grid.min.css">
     <link rel="stylesheet" href="../css/bootstrap-reboot.min.css">
     <link rel="stylesheet" href="../css/saját.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="../js/bootstrap.min.js"></script>
     <!--forrás: https://www.divinectorweb.com/2020/11/bootstrap-4-navbar-with-slider.html-->
     <link href="https://fonts.googleapis.com/css2?family=Merienda&display=swap" rel="stylesheet">
@@ -24,59 +25,49 @@
 
     <script src="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css"></script>
 
-    <title>alkohol</title>
+    <title>Online ABC - Alkohol</title>
 </head>
 
 <body>
 
     <!--NAVBAR-->
-    <!--forrás részlet: https://www.divinectorweb.com/2020/11/bootstrap-4-navbar-with-slider.html-->
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
-        <div class="container">
-            <a class="navbar-brand" href="#">online abc</a> <button aria-controls="navbarSupportedContent"
-                aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler"
-                data-target="#navbarSupportedContent" data-toggle="collapse" type="button"><span
-                    class="navbar-toggler-icon"></span></button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="../index.html">Kezdőlap</a>
-                    </li>
-                    <li class="nav-item ">
-
-                        <div class="dropdown">
-                            <button
-                                class="btn dropdown-toggle legordulo nav-link nav-item collapse navbar-collapse navbar-nav ml-auto "
-                                aria-haspopup="true" aria-expanded="false" type="button"
-                                data-toggle="dropdown">Kategóriák
-                                <span class="caret"></span>
-                            </button>
-                            <ul class="dropdown-menu">
-                                <li><a href="elelmiszer.html">Élelmiszer</a></li>
-                                <li><a href="haztartas.html">Háztartás</a></li>
-                                <li><a href="husok.html">Hús</a></li>
-                                <li><a href="uditok.html">Üdítő</a></li>
-                                <li><a href="alkohol.html">Alkohol</a></li>
-                                <li><a href="jatekok.html">Játékok</a></li>
-                            </ul>
-                        </div>
-
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Összes termék</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Hírek</a>
-                    </li>
-                </ul>
-            </div>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="#"><img src="../images/képek/disz/logo1.png" class="navImg"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav ml-auto navbarLi">
+            <li class="nav-item active">
+              <a class="nav-link navLink" href="../index.html">Kezdőlap</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link navLink" href="../index.html/#cikkek">Cikkek</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link navLink" href="../html/allas.html">Állás</a>
+            </li>
+            <li class="nav-item dropdown active">
+              <a class="nav-link navLink dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Kategóriák
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item navLink" href="#">Alkohol</a>
+                <a class="dropdown-item navLink" href="../html/elelmiszer.html">Élelmiszer</a>
+                <a class="dropdown-item navLink" href="../html/haztartas.html">Háztartás</a>
+                <a class="dropdown-item navLink" href="../html/husok.html">Húsok</a>
+                <a class="dropdown-item navLink" href="../html/jatekok.html">Játékok</a>
+                <a class="dropdown-item navLink" href="../html/uditok.html">Üdítők</a>
+              </div>
+            </li>
+          </ul>
         </div>
-    </nav>
+      </nav>
 
 
 
     <!-- TITLE -->
-    <h1 class="text-center">Alkoholok</h1>
+    <h1 class="text-center allasCim">Alkoholok</h1>
 
 
 
