@@ -1,6 +1,20 @@
+/*
+window.addEventListener("load", init, false);
+
+function $(id) {
+  return document.getElementById(id);
+}
+
+function init() {
+  $("gomb").addEventListener("click", rendez, false);
+
+  //$("csokkeno").addEventListener("click", csokkeno, false);
+
+}
+*/
+
 //plusz minusz 
 //forrás: https://stackoverflow.com/questions/31078632/multiple-plus-and-minus-buttons
-
 var total;
 // if user changes value in field
 $('.field').change(function () {
@@ -60,75 +74,45 @@ $('.submitbutton3').click(function () {
   console.log(termek3.ar * termek3.mennyiseg + " ");
 });
 
-
-
-//var kosar = [termek1, termek2, termek3];
-
-
-//kosár
 /*
-$('.submitbutton').click(function() {
-let termekek = [];
-let termekekNeve = [];
-let osszAr = [];
-var ar = $('#item1 span').text();
-var nev = $('#itemNev span').text();
-var mennyiseg = $("input:text").val();
+//rendezés
+let elemek = [];
+let asahi = document.$("ar1").value;
+let heineken = document.$("ar2").value;
+let jackDaniels = document.$("ar3").value;
+let jager = document.$("ar4").value;
+let jimBeam = document.$("ar5").value;
+let kobanyai = document.$("ar6").value;
+let somersby = document.$("ar7").value;
+let torley = document.$("ar8").value;
+let unicum = document.$("ar9").value;
 
-var osszeg = ar*mennyiseg;
- 
-termekek.push(ar);
-termekekNeve.push(nev);
-osszAr.push(osszeg);
+elemek.push(asahi, heineken, jackDaniels, jager, jimBeam, kobanyai, somersby, torley, unicum);
 
-console.log(termekek);
-console.log(termekekNeve);
-console.log(mennyiseg);
-console.log(osszAr);
 
-});
-
-$('.submitbutton2').click(function() {
-  termekek = [];
-  termekekNeve = [];
-  osszAr = [];
-  var ar2 = $('#item2 span').text();
-  var nev2 = $('#itemNev2 span').text();
-  var mennyiseg2 = $("#txt_name").val();
-  
-  var osszeg2 = ar2*mennyiseg2;
+ function rendezesNovekvo() {
    
-  termekek.push(ar2);
-  termekekNeve.push(nev2);
-  osszAr.push(osszeg2);
-  
-  console.log(termekek);
-  console.log(termekekNeve);
-  console.log(mennyiseg2);
-  console.log(osszAr);
+   for(let i=0; elemek.length; i++){
+      for(let j=0; elemek.length; j++){
+        if(rendezes[j] < rendezes[i]){
+          temp = rendezes[j];
+          rendezes[j] = rendezes[i];
+          rendezes[i] = temp;
+        }
+      }
+   }
+ }
 
-});
 
+let rendez = function () {
+  if($("novekvo").checked){
+    elemek.sort();
+    console.log(elemek);
+  }
+  if($("csokkeno").checked){
+    elemek.reverse();
+    console.log(elemek);
+  }
 
-
-/*
-function kosar() {
-  var termekek = [];
-  var termekekNeve = [];
-  var osszAr = [];
-  var ar2 = $("ar").text();
-  var nev2 = $("hein").text();
-  var mennyiseg2 = $('txt_name').value;
-  
-  var osszeg2 = ar2*mennyiseg2;
-   
-  termekek.push(ar2);
-  termekekNeve.push(nev2);
-  osszAr.push(osszeg2);
-  
-  console.log(termekek);
-  console.log(termekekNeve);
-  console.log(mennyiseg2);
-  console.log(osszAr);
 }
 */
