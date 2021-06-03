@@ -22,6 +22,10 @@
     <link href='https://fonts.googleapis.com/css?family=Satisfy' rel='stylesheet'>
     <!-- forrás: https://www.cdnpkg.com/jquery/1.7.1 -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <title>Online Abc</title>
 </head>
 <body>
@@ -56,15 +60,15 @@
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-5 bejelentkezesCol">
-                    <form>
+                    <form action="/action_page.php" >
                         <label class="bejelentkezesLabel">Email-cím:</label><br>
                         <input type="email" placeholder="Email-cím" id="bejelentkezE" class="bejelentkezesInput"><br>
                         <label class="bejelentkezesLabel">Jelszó</label><br>
-                        <input type="password" placeholder="Jelszó" id="jelszo" class="bejelentkezesInput"><br>
+                        <input type="password" placeholder="Jelszó" id="jelszo" class="bejelentkezesInput" name="text1"><br>
                         <label class="bejelentkezesLabel">Jelszó megerősítése</label><br>
-                        <input type="password" placeholder="Jelszó megerősítése" id="jelszo" class="bejelentkezesInput"><br>
+                        <input type="password" placeholder="Jelszó megerősítése" id="jelszo2" class="bejelentkezesInput"><br>
                         <div class="bejelentkezesGombLentebb">
-                        <button type="button" class="btn  headerGomb1 ">Bejelentkezés</button><br>
+                        <button type="button" class="btn  headerGomb1 " id="gomb">Bejelentkezés</button><br>
                         <a href="bejelentkezes.html" class="bejelentkezesLink">Van már profilja?</a>
                     </div>
                     </form>
@@ -130,6 +134,8 @@
             <span class="copyright">© Kozák Tamás | Bodnár Luca</span>
         </div>
     </footer>
+
+    <script src="../../js/regisztracio.js"></script>
 
     
 </body>

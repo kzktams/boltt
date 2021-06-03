@@ -132,4 +132,3 @@ function kosar() {
   console.log(osszAr);
 }
 */
-
