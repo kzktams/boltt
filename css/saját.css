@@ -763,4 +763,16 @@ nav{
 	color: rgb(128, 0, 0);
   }
 
+  .termekRow{
+	border: gray 1px solid;
+	border-radius: 25px;
+	box-shadow: gray 1px 1px 1px 1px;
+	padding: 25px;
+  }
+
+  .termekRowCont{
+	  padding-top: 40px;
+	  padding-bottom: 40px;
+  }
+
   
