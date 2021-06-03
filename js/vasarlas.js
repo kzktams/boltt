@@ -1,6 +1,6 @@
 //plusz minusz 
 //forrás: https://stackoverflow.com/questions/31078632/multiple-plus-and-minus-buttons
-/*
+
 var total;
 // if user changes value in field
 $('.field').change(function () {
@@ -60,7 +60,7 @@ $('.submitbutton3').click(function () {
   console.log(termek3.ar * termek3.mennyiseg + " ");
 });
 
-*/
+
 
 //var kosar = [termek1, termek2, termek3];
 
@@ -132,3 +132,4 @@ function kosar() {
   console.log(osszAr);
 }
 */
+
